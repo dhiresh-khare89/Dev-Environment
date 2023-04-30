@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ResponseRequiredInCaseOfIRC__c</fullName>
+    <description>In case of IRC. What type of response is required?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>In case of IRC. What type of response is required?</inlineHelpText>
+    <label>Response Required In Case Of IRC</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Responses required only, if relationships are identified.</fullName>
+                <default>false</default>
+                <label>Responses required only, if relationships are identified.</label>
+            </value>
+            <value>
+                <fullName>Responses required, whether or not relationships are identified.</fullName>
+                <default>false</default>
+                <label>Responses required, whether or not relationships are identified.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

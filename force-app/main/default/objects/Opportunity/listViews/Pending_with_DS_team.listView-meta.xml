@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_with_DS_team</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Assigned_to_DS_Team_Member__c</columns>
+    <columns>Assignment_Date__c</columns>
+    <columns>Pick_Record__c</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DSTeamApprovalRejectionDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Pending with DS team</label>
+    <sharedTo>
+        <group>DS_Team</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Law Firms</label>
+    <protected>true</protected>
+    <values>
+        <field>NSL__c</field>
+        <value xsi:type="xsd:string">ankita.jain@in.gt.com</value>
+    </values>
+    <values>
+        <field>OwnerId__c</field>
+        <value xsi:type="xsd:string">mansi.chhabra@in.gt.com</value>
+    </values>
+    <values>
+        <field>Sector__c</field>
+        <value xsi:type="xsd:string">Law Firms</value>
+    </values>
+    <values>
+        <field>Solution__c</field>
+        <value xsi:type="xsd:string">BeSpoke;Expertise;Forensic &amp; Dispute Litigation;Restructuring &amp; Insolvency;Tax Litigation &amp; Support;Transactions (incl Valuations)</value>
+    </values>
+    <values>
+        <field>Sub_Sector__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>sector_cordinator_id__c</field>
+        <value xsi:type="xsd:string">mansi.chhabra@in.gt.com</value>
+    </values>
+</CustomMetadata>

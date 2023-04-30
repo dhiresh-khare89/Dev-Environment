@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Expertise_Formula_Field__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES ( SubExpertise__c, &quot;Financial Reporting Advisory Services&quot; ), &quot;Financial Reporting Advisory Services;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c, &quot;Financial Statement Audit and Attestation Services&quot; ), &quot;Financial Statement Audit and Attestation Services;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c, &quot;Risk&quot; ), &quot;Risk;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c, &quot;Cyber&quot; ), &quot;Cyber;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c, &quot;Governance, Risk &amp;amp; Operations&quot; ), &quot;Governance, Risk &amp;amp; Operations;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c, &quot;Forensic &amp;amp; Investigation Services&quot; ), &quot;Forensic &amp;amp; Investigation Services;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c, &quot;IT risk advisory services&quot; ), &quot;IT risk advisory services;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c, &quot;Direct tax services&quot; ), &quot;Direct tax services;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c, &quot;Indirect tax services&quot; ), &quot;Indirect tax services;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Transfer pricing&quot; ), &quot;Transfer pricing;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;US Tax&quot; ), &quot;US Tax;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Financial Services&quot; ), &quot;Financial Services;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Global Mobility Services&quot; ), &quot;Global Mobility Services;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Union Budget&quot; ), &quot;Union Budget;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Business Consulting&quot; ), &quot;Business Consulting;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Deal Advisory&quot; ), &quot;Deal Advisory;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c  , &quot;Organization Effectiveness&quot; ), &quot;Organization Effectiveness;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Due Diligence&quot; ), &quot;Due Diligence;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Valuations&quot; ), &quot;Valuations;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Human Capital Consulting&quot; ), &quot;Human Capital Consulting;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Sales transformation&quot; ), &quot;Sales transformation;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Development Positive&quot; ), &quot;Development Positive;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Smart Cities Mission&quot; ), &quot;Development Positive;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Debt advisory&quot; ), &quot;Debt advisory;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;IBR&quot; ), &quot;IBR;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Insolvency services&quot; ), &quot;Insolvency services;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Asset tracing&quot; ), &quot;Asset tracing;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Data analytics and visualization&quot; ), &quot;Data analytics and visualization;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Digital finance&quot; ), &quot;Digital finance;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Digital GBS&quot; ), &quot;Digital GBS;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Digital operations&quot; ), &quot;Digital operations;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Digital risk&quot; ), &quot;Digital risk;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Intelligent automation&quot; ), &quot;Intelligent automation;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c  , &quot;Skills of the Future&quot; ), &quot;Skills of the Future;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Blockchain solution&quot; ), &quot;Blockchain solution;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;IT Advisory/IT Risk Assurance&quot; ), &quot;IT Advisory/IT Risk Assurance;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Related Party Transaction Governance&quot; ), &quot;Related Party Transaction Governance;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Production Linked Incentive Scheme&quot; ), &quot;Production Linked Incentive Scheme;&quot;,null ) &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Overseas listing&quot; ), &quot;Overseas listing;&quot;,null )  &amp;
+IF ( INCLUDES ( SubExpertise__c , &quot;Labour codes&quot; ), &quot;Labour codes;&quot;,null )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sub Expertise Formula Field</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

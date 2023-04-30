@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Case_Record_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Case Record Sharing</label>
+        <sharedTo>
+            <group>Sector_Assignment_Team</group>
+        </sharedTo>
+        <sharedFrom>
+            <queue>Email_to_Case_Queue</queue>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

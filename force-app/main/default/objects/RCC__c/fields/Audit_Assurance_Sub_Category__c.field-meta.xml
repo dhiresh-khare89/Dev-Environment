@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audit_Assurance_Sub_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Audit &amp; Assurance Sub Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Audit and/or Review of Financial Statements</fullName>
+                <default>false</default>
+                <label>Audit and/or Review of Financial Statements</label>
+            </value>
+            <value>
+                <fullName>Financial reporting advisory</fullName>
+                <default>false</default>
+                <label>Financial reporting advisory</label>
+            </value>
+            <value>
+                <fullName>Other Assurance services</fullName>
+                <default>false</default>
+                <label>Other Assurance services</label>
+            </value>
+            <value>
+                <fullName>Others Services (Please describe)</fullName>
+                <default>false</default>
+                <label>Others Services (Please describe)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

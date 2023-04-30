@@ -1,0 +1,33 @@
+<apex:page standardController="Lead" recordSetVar="leads" tabStyle="Lead" extensions="ScanVisitingCardController">
+    
+    <script>
+    //debugger;
+    var agent = navigator.platform;
+    //var agent = navigator.userAgent;
+    //window.alert(agent); 
+    var value = '{!myValue}';
+    
+    if(value === 'true'){
+        console.log('Value :',value);
+        var showBody="{!$Label.Scan2SFDC_ErrorMsg_Body}";
+        //window.alert(showBody);
+        var showTitle="{!$Label.Scan2SFDC_ErrorMsg_Title}";
+        console.log('Value :',value);
+        sforce.one.showToast({
+            "title": showTitle,
+            "message": showBody,
+            "type": "Error"
+        });
+        sforce.one.back();
+    }
+    else if(agent==='iPhone'){
+        //window.open('https://apps.apple.com/in/app/scan-to-salesforce-pardot/id1442743563');
+        window.open('https://apps.apple.com/us/app/scan-to-salesforce-pardot/id1442743563');
+        }
+    else{
+        
+        window.open('https://play.google.com/store/apps/details?id=com.sansan.scantosalesforce');
+    }
+    </script>
+    
+</apex:page>

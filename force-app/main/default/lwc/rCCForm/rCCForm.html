@@ -1,0 +1,89 @@
+<template>
+<div slot="actions">
+<lightning-button variant="brand" label="Create RCC" title="Successful action" onclick={openForm}></lightning-button>
+</div>
+
+<!-- Create RCC Form For Related Enquiry -->
+<template if:true={isShowRccForm}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                     <!-- Modal/Popup Box LWC header here -->
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={closeRccForm}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="brand"
+                            size="small" style="background:white">
+                        </lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Create RCC</h2>
+                </header>
+                        <!-- <div class="slds-modal__header">
+                        <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate" tabindex="-1">Create RCC</h1>
+                        </div> -->
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <lightning-flow flow-api-name="Flow_To_Create_RCC_Updated" flow-input-variables={enquiryId} onstatuschange={handleFlowStatusChange}></lightning-flow>
+                </div>
+                <!-- <div class="slds-modal__footer">
+                        <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick={closeRccForm}>Cancel</button>
+                        </div> -->
+                </div>
+        </section>
+</template>
+
+<!-- Rcc List View For Related Enquiry -->
+<template if:true={isDataFound}>
+<lightning-card>
+                <!-- Lightning Spinner -->
+                <lightning-spinner variant="brand" if:true={isRCCFormLoading} alternative-text="Loading" size="medium"></lightning-spinner>
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered"
+                aria-label="Example table of Opportunities with vertical borders">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Name Of Entity">Name Of Entity</div>
+                        </th>
+                        <th class="" scope="col">
+                                <div class="slds-truncate" title="Status">Status</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="RCC Date">RCC Date</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Remaining Days">Remaining Days</div>
+                            </th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <template for:each={RCCs} for:item="item">
+                            <tr key={item.Id} class="slds-hint-parent" >
+                                <th data-label="Name Of Entity" scope="row">
+                                    <div key={item.Id}>
+                                        <div class="slds-truncate" title="Name Of Entity">
+                                            <a href={item.link}
+                                                tabindex="-1">{item.Name}</a>
+                                        </div>
+                                    </div>
+                                </th>   
+                                <td data-label="RCC Current Status">
+                                        <div class="slds-truncate" title="Status">{item.Enquiry__r.RCCCurrentStatus__c}</div>
+                                    </td>
+                                    <td data-label="Created Date">
+                                        <div class="slds-truncate" title="RCC Date">{item.CreatedDate}</div>
+                                    </td>
+                                    <td data-label="Pending Days To Expire">
+                                        <div class="slds-truncate" title="Remaining Days">{item.Enquiry__r.PendingDaysToExpire__c}</div>
+                                    </td>
+                            </tr>
+                        </template>
+                </tbody>
+            </table>
+
+<!-- <lightning-datatable
+        key-field="id"
+        data={RCCs}
+        columns={cols}>
+</lightning-datatable> -->
+</lightning-card>
+</template>
+</template>

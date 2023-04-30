@@ -1,0 +1,8 @@
+<apex:page standardController="Account" extensions="capIQButtontoUpdateClient" action="{!sendCapIQIdtoMap}">
+  <apex:form >
+  <apex:messages />     
+     <apex:pageBlock >     
+      <apex:inputHidden value="{!Account.OwnerId}"/>
+     </apex:pageBlock>
+  </apex:form>
+</apex:page>

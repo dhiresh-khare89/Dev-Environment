@@ -1,0 +1,21 @@
+<template>
+<!-- Other Services Taxonomy Template -->
+<template if:true={isShowOtherServicesTaxonomy}>
+    <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <!-- Taxonomy Template Content -->
+                    <div class="demo-only" style="padding:0.5rem;background:#16325c">
+                        <div class="slds-text-color_inverse">OTHER SERVICES TAXONOMY</div>
+                    </div>
+                        <br/>
+                        <p class="slds-wrap">
+                            Anything which does not fall within the definitions of audit or non-audit assurance services or is unallocated.
+                        </p></div>
+        <div class="slds-modal__footer">
+                <button class="slds-button slds-button_neutral slds-align_absolute-center" aria-label="Cancel and close" onclick={closeOtherServicesTaxonomyTemplate}>Ok</button>
+                </div>
+        </div>
+    </section>
+    </template>
+</template>

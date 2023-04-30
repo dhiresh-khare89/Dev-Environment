@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Creative Hub Meta Data</label>
+    <protected>false</protected>
+    <values>
+        <field>Client_Secret__c</field>
+        <value xsi:type="xsd:string">-Eb8Q~OtVUV.aRmEsu20GjpzrpvicfyEgXisHaCw</value>
+    </values>
+    <values>
+        <field>Client_id__c</field>
+        <value xsi:type="xsd:string">0f9e9215-fb89-4f3a-a918-45842781f65e</value>
+    </values>
+    <values>
+        <field>DocURL__c</field>
+        <value xsi:type="xsd:string">https://graph.microsoft.com/v1.0/drives/b!XubtTw6P20ijOu3Z4iiu-PC2UeLgBKdIsD8tXSxDn2Aq4ITpR06UTp68yJ6DXQ2i/root:/</value>
+    </values>
+    <values>
+        <field>End_Point_URL__c</field>
+        <value xsi:type="xsd:string">https://graph.microsoft.com/v1.0/sites/4fede65e-8f0e-48db-a33a-edd9e228aef8/lists/f2ad9ba7-30be-46cb-a7eb-5c43377fae44/items</value>
+    </values>
+    <values>
+        <field>Grant_Type__c</field>
+        <value xsi:type="xsd:string">client_credentials</value>
+    </values>
+    <values>
+        <field>Scope__c</field>
+        <value xsi:type="xsd:string">https://graph.microsoft.com/.default</value>
+    </values>
+    <values>
+        <field>Token_End_Point_URL__c</field>
+        <value xsi:type="xsd:string">https://login.microsoftonline.com//05b5fe2e-db2c-48e5-bfd8-778b75cb0f8e/oauth2/v2.0/token</value>
+    </values>
+    <values>
+        <field>urlForDocBinding__c</field>
+        <value xsi:type="xsd:string">https://graph.microsoft.com/v1.0/drives/b!XubtTw6P20ijOu3Z4iiu-PC2UeLgBKdIsD8tXSxDn2Aq4ITpR06UTp68yJ6DXQ2i/root:/</value>
+    </values>
+</CustomMetadata>

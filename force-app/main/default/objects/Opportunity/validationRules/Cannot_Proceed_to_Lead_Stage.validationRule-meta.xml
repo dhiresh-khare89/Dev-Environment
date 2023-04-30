@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Proceed_to_Lead_Stage</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(ISPICKVAL(StageName,&apos;New&apos;),
+ISPICKVAL(StageName,&apos;Internal / External Discussions&apos;),
+ISPICKVAL(StageName,&apos;Client Take-On PreWork&apos;),
+ISPICKVAL(StageName,&apos;Client Take On&apos;),
+ISPICKVAL(StageName,&apos;Accept Client&apos;),
+ISPICKVAL(StageName,&apos;Not Accepted Client&apos;)
+
+		)</errorConditionFormula>
+    <errorMessage>You cannot select this Stage because this process has been already completed.</errorMessage>
+</ValidationRule>

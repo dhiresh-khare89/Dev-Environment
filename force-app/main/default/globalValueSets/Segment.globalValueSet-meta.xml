@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Government</fullName>
+        <default>false</default>
+        <label>Government</label>
+    </customValue>
+    <customValue>
+        <fullName>Large Private</fullName>
+        <default>false</default>
+        <label>Large Private</label>
+    </customValue>
+    <customValue>
+        <fullName>Largest Listed</fullName>
+        <default>false</default>
+        <label>Largest Listed</label>
+    </customValue>
+    <customValue>
+        <fullName>Listed</fullName>
+        <default>false</default>
+        <label>Listed</label>
+    </customValue>
+    <customValue>
+        <fullName>PE Fund</fullName>
+        <default>false</default>
+        <label>PE Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>PE Investee</fullName>
+        <default>false</default>
+        <label>PE Investee</label>
+    </customValue>
+    <customValue>
+        <fullName>S M Private</fullName>
+        <default>false</default>
+        <label>S M Private</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Segment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

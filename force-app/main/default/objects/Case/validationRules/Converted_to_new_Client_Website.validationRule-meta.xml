@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Converted_to_new_Client_Website</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Status , &quot;Converted to New Client&quot;),
+ISCHANGED(Status))
+&amp;&amp;
+ ISBLANK(Website__c)</errorConditionFormula>
+    <errorDisplayField>Website__c</errorDisplayField>
+    <errorMessage>Please fill the Website.</errorMessage>
+</ValidationRule>

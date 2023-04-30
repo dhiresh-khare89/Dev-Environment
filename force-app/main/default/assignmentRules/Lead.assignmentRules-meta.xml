@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Assign Lead to Sector Coordinator %2F EAT</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>SectorAssignmentTeam</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Sector__c</field>
+                <operation>notContain</operation>
+                <value>Auto &amp; Auto Components,CIP &amp; Retail,Financial Services,Global Delivery,Govt,Law Firms,Owners &amp; Private Clients,PE / VC,Pharma &amp; Healthcare Services,Real Estate &amp; Infra,TMT</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>contains</operation>
+                <value>Website,Email,Chat Bot,Event,Manual,Social Media,Campaign,Cross Sell</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry/>
+    </assignmentRule>
+</AssignmentRules>

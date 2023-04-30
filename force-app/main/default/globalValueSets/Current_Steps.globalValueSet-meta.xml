@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Add Finding Partner</fullName>
+        <default>false</default>
+        <label>Add Finding Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>DS Team Review</fullName>
+        <default>false</default>
+        <label>DS Team Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Conflict Check</fullName>
+        <default>false</default>
+        <label>Conflict Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Execute NSL, Client Council Recommendations</fullName>
+        <default>false</default>
+        <label>Execute NSL, Client Council Recommendations</label>
+    </customValue>
+    <customValue>
+        <fullName>Identification of Client Contact Roles</fullName>
+        <default>false</default>
+        <label>Identification of Client Contact Roles</label>
+    </customValue>
+    <customValue>
+        <fullName>Create Contacts</fullName>
+        <default>false</default>
+        <label>Create Contacts</label>
+    </customValue>
+    <customValue>
+        <fullName>Fill all fields of Problem and Impact Quip Template</fullName>
+        <default>false</default>
+        <label>Fill all fields of Problem and Impact Quip Template</label>
+    </customValue>
+    <customValue>
+        <fullName>Create Pitch Deck</fullName>
+        <default>false</default>
+        <label>Create Pitch Deck</label>
+    </customValue>
+    <customValue>
+        <fullName>Create Initial Commercials</fullName>
+        <default>false</default>
+        <label>Create Initial Commercials</label>
+    </customValue>
+    <customValue>
+        <fullName>Create Proposal</fullName>
+        <default>false</default>
+        <label>Create Proposal</label>
+    </customValue>
+    <customValue>
+        <fullName>Capture Minutes of Meetings</fullName>
+        <default>false</default>
+        <label>Capture Minutes of Meetings</label>
+    </customValue>
+    <customValue>
+        <fullName>Refine Commercials</fullName>
+        <default>false</default>
+        <label>Refine Commercials</label>
+    </customValue>
+    <customValue>
+        <fullName>Nurture via Campaign</fullName>
+        <default>false</default>
+        <label>Nurture via Campaign</label>
+    </customValue>
+    <customValue>
+        <fullName>Refine Proposal</fullName>
+        <default>false</default>
+        <label>Refine Proposal</label>
+    </customValue>
+    <customValue>
+        <fullName>Iterate Client Connect</fullName>
+        <default>false</default>
+        <label>Iterate Client Connect</label>
+    </customValue>
+    <customValue>
+        <fullName>Engagement Letter Creation/Acceptance</fullName>
+        <default>false</default>
+        <label>Engagement Letter Creation/Acceptance</label>
+    </customValue>
+    <customValue>
+        <fullName>QRMG Checklist &amp; Approval</fullName>
+        <default>false</default>
+        <label>QRMG Checklist &amp; Approval</label>
+    </customValue>
+    <customValue>
+        <fullName>Fill Closed Won/Lost Debrief Template</fullName>
+        <default>false</default>
+        <label>Fill Closed Won/Lost Debrief Template</label>
+    </customValue>
+    <customValue>
+        <fullName>Appreciate your Peers</fullName>
+        <default>false</default>
+        <label>Appreciate your Peers</label>
+    </customValue>
+    <customValue>
+        <fullName>Execute NSL, Client Council Recommendation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Execute NSL, Client Council Recommendation</label>
+    </customValue>
+    <description>Dependent Picklist used in Guidance for Success in Enquiry.</description>
+    <masterLabel>Current Steps</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

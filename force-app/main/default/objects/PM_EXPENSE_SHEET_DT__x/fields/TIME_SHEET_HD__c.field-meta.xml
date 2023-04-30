@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TIME_SHEET_HD__c</fullName>
+    <externalDeveloperName>PROJECT_ID</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>TIME_SHEET_HD</label>
+    <length>255</length>
+    <referenceTo>TIME_SHEET_HD__x</referenceTo>
+    <relationshipLabel>PM_EXPENSE_SHEET_DT</relationshipLabel>
+    <relationshipName>PM_EXPENSE_SHEET_DT</relationshipName>
+    <type>ExternalLookup</type>
+</CustomField>

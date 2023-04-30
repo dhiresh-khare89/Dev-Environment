@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Name_Rule</fullName>
+    <active>true</active>
+    <description>Client Name Should Not be editable for New Client Owner Profile</description>
+    <errorConditionFormula>AND
+(
+	NOT(ISNEW()),
+	TEXT(LeadSource) != &quot;Manual&quot;,
+	OwnerId = $User.Id,
+	NSL__c != $User.Id,
+	SectorCoordinator__c != $User.Id,
+	ISCHANGED(Company)
+)</errorConditionFormula>
+    <errorDisplayField>Company</errorDisplayField>
+    <errorMessage>You cannot change Client Name. Please contact the Sector Business Partner.</errorMessage>
+</ValidationRule>

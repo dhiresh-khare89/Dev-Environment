@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IfCountryCodeIsIndiathenOnly10Digits</fullName>
+    <active>false</active>
+    <description>moble should be take only number</description>
+    <errorConditionFormula>AND(
+       OR(LEN(MobilePhone ) &gt;10,
+LEN(MobilePhone) &lt; 10),
+          ISPICKVAL( CountryCode__c , &quot;India (+91)&quot;) ,
+NOT(ByPassValidation__c)
+ )</errorConditionFormula>
+    <errorDisplayField>MobilePhone</errorDisplayField>
+    <errorMessage>Mobile number should have 10 digits</errorMessage>
+</ValidationRule>

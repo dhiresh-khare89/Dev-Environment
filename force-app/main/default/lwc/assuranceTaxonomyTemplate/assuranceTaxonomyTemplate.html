@@ -1,0 +1,28 @@
+<template>
+<!-- Assurance services (other than audit) Taxonomy Template -->
+<template if:true={isShowAssuranceTaxonomy}>
+<section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+    <div class="slds-modal__container">
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                <!-- Taxonomy Template Content -->
+                <div class="demo-only" style="padding:0.5rem;background:#16325c">
+                    <div class="slds-text-color_inverse">ASSURANCE TAXONOMY</div>
+                </div>
+                    <br/>
+                    <p class="slds-wrap">
+                          An assurance engagement is an engagement conducted to provide: 
+                          </p>
+                          <p class="slds-wrap"> 
+                        - A high level of assurance that the subject matter conforms in all material respects with identified &nbsp;&nbsp;&nbsp;suitable criteria; or 
+                    </p>
+                    <p class="slds-wrap"> 
+                        - A moderate level of assurance that the subject matter is plausible in the circumstances.
+                    </p>
+                </div>
+    <div class="slds-modal__footer">
+            <button class="slds-button slds-button_neutral slds-align_absolute-center" aria-label="Cancel and close" onclick={closeAssuranceTaxonomyTemplate}>Ok</button>
+            </div>
+    </div>
+</section>
+</template>
+</template>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>PE/VC</label>
+    <protected>true</protected>
+    <values>
+        <field>NSL__c</field>
+        <value xsi:type="xsd:string">muhammed.vasil@walkerchandiok.in</value>
+    </values>
+    <values>
+        <field>OwnerId__c</field>
+        <value xsi:type="xsd:string">eva.tewari@in.gt.com</value>
+    </values>
+    <values>
+        <field>Sector__c</field>
+        <value xsi:type="xsd:string">PE/VC</value>
+    </values>
+    <values>
+        <field>Solution__c</field>
+        <value xsi:type="xsd:string">IDD &amp; Discreet CDD;ABC Diligence;US Tax;	Stat Audit;Internal Audit;FDD;Getting ready for PE &amp; Beyond;M&amp;A Tax,BeSpoke;Expertise</value>
+    </values>
+    <values>
+        <field>Sub_Sector__c</field>
+        <value xsi:type="xsd:string">PE / VC</value>
+    </values>
+    <values>
+        <field>sector_cordinator_id__c</field>
+        <value xsi:type="xsd:string">eva.tewari@in.gt.com</value>
+    </values>
+</CustomMetadata>

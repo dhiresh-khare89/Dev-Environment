@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Consulting_Services__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Consulting Services</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business consulting type - Operational improvement</fullName>
+                <default>false</default>
+                <label>Business consulting type - Operational improvement</label>
+            </value>
+            <value>
+                <fullName>Business consulting type - Technology</fullName>
+                <default>false</default>
+                <label>Business consulting type - Technology</label>
+            </value>
+            <value>
+                <fullName>Business consulting type - Business transformation</fullName>
+                <default>false</default>
+                <label>Business consulting type - Business transformation</label>
+            </value>
+            <value>
+                <fullName>Business consulting type - Financial management</fullName>
+                <default>false</default>
+                <label>Business consulting type - Financial management</label>
+            </value>
+            <value>
+                <fullName>Business consulting type - Strategy</fullName>
+                <default>false</default>
+                <label>Business consulting type - Strategy</label>
+            </value>
+            <value>
+                <fullName>Business consulting type - Human capital</fullName>
+                <default>false</default>
+                <label>Business consulting type - Human capital</label>
+            </value>
+            <value>
+                <fullName>Business consulting type - Data analysis</fullName>
+                <default>false</default>
+                <label>Business consulting type - Data analysis</label>
+            </value>
+            <value>
+                <fullName>Business consulting type - Programme management</fullName>
+                <default>false</default>
+                <label>Business consulting type - Programme management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

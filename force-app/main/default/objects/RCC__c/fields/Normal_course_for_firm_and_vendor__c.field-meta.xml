@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Normal_course_for_firm_and_vendor__c</fullName>
+    <description>Is the business relationship an arm&apos;s length transaction and in the normal course of business for your firm and the vendor?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is the business relationship an arm&apos;s length transaction and in the normal course of business for your firm and the vendor?</inlineHelpText>
+    <label>Normal course for firm and vendor?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

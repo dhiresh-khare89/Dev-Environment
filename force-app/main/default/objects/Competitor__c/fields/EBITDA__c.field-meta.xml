@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBITDA__c</fullName>
+    <description>Earnings Before Interest, Tax, Depreciation &amp; Amortization (EBITDA)</description>
+    <externalId>false</externalId>
+    <label>EBITDA</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

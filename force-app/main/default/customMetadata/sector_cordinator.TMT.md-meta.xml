@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>TMT</label>
+    <protected>true</protected>
+    <values>
+        <field>NSL__c</field>
+        <value xsi:type="xsd:string">vipul.modi@walkerchandiok.in</value>
+    </values>
+    <values>
+        <field>OwnerId__c</field>
+        <value xsi:type="xsd:string">eva.tewari@in.gt.com</value>
+    </values>
+    <values>
+        <field>Sector__c</field>
+        <value xsi:type="xsd:string">TMT</value>
+    </values>
+    <values>
+        <field>Solution__c</field>
+        <value xsi:type="xsd:string">India led Global Assurance;Unlocking value through Overseas Listings;Unlocking value through M&amp;A and PE (deal advisory);Securing your tech systems (Cyber security &amp; SOC);India led Global risk assurance;Global Tax optimization;Global compliance and reporting;Digitizing and transforming your tax function;Workforce transformation: HR advisory and ESOP Planning;Start-ups &amp; Unicorns advisory(fund-raise and digitization of finance and business functions);Transforming your risk function (advisory &amp; staff augmentation);BeSpoke;Expertise</value>
+    </values>
+    <values>
+        <field>Sub_Sector__c</field>
+        <value xsi:type="xsd:string">Media &amp; Telecom;Technology</value>
+    </values>
+    <values>
+        <field>sector_cordinator_id__c</field>
+        <value xsi:type="xsd:string">eva.tewari@in.gt.com</value>
+    </values>
+</CustomMetadata>

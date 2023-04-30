@@ -1,0 +1,37 @@
+<apex:page standardController="IntegratedEnquiry__c" extensions="CreateCommercialReportVFController" contentType="application/vnd.ms-excel#SalesForceExport.xls" cache="true" applyBodyTag="false">
+    <style>
+            @page{
+              size: 29.7cm 21.0cm ; margin-top: 1.0cm; margin-left: 1.0cm; margin-right: 1.0cm; margin-bottom: 1.0cm; 
+            }            
+            body {
+                font-family: 'Arial Unicode MS';
+            }
+       
+        </style>
+    <apex:repeat value="{!wrapperList}" var="key" >
+    <table style="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered" width="100%" border="5">
+            <tr>
+                <th scope="col"><span class="slds-truncate">Enquiry Name</span></th>
+                <th scope="col"><span class="slds-truncate">Commercial Name</span></th>
+                <th scope="col"><span class="slds-truncate">Product Name</span></th>
+                <th scope="col"><span class="slds-truncate">Quantity</span></th>
+                <th scope="col"><span class="slds-truncate">Sales Price</span></th>
+                <th scope="col"><span class="slds-truncate">Commercial Amount</span></th>
+                <th scope="col"><span class="slds-truncate">Discount</span></th>
+                <th scope="col"><span class="slds-truncate">Net Amount</span></th>
+            </tr>
+           <apex:repeat value="{!wrapperList[key]}" var="wrapObject" >
+                <tr>
+                     <td>{!wrapObject.enquiryName}</td>
+                    <td>{!wrapObject.quoteName}</td>
+                    <td>{!wrapObject.ProductName}</td>
+                    <td>{!wrapObject.quantity}</td>
+                    <td>{!wrapObject.salesPrice}</td>
+                    <td>{!wrapObject.commercialAmount}</td>
+                    <td>{!wrapObject.discount}</td>
+                    <td>{!wrapObject.netAmount}</td>
+                </tr>
+            </apex:repeat>
+    </table>
+    </apex:repeat>
+</apex:page>

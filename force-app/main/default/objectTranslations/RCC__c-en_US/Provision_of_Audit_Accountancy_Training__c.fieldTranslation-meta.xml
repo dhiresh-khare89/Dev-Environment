@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>Provision_of_Audit_Accountancy_Training__c</name>
+    <picklistValues>
+        <masterLabel>Provision of audit training, accountancy and software training.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

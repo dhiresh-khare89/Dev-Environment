@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BusinessRelationshipSubCategory__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Relationship Sub-Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Vendor relationships</fullName>
+                <default>false</default>
+                <label>Vendor relationships</label>
+            </value>
+            <value>
+                <fullName>Lease agreements</fullName>
+                <default>false</default>
+                <label>Lease agreements</label>
+            </value>
+            <value>
+                <fullName>Contractor/subcontractor for client services</fullName>
+                <default>false</default>
+                <label>Contractor/subcontractor for client services</label>
+            </value>
+            <value>
+                <fullName>Joint venture</fullName>
+                <default>false</default>
+                <label>Joint venture</label>
+            </value>
+            <value>
+                <fullName>Other business relationships</fullName>
+                <default>false</default>
+                <label>Other business relationships</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

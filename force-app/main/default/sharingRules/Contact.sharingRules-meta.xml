@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Contact_Sharing_Rule_For_Groups</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Contact Sharing Rule For Groups</label>
+        <sharedTo>
+            <group>DS_Team</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>DS_Team</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

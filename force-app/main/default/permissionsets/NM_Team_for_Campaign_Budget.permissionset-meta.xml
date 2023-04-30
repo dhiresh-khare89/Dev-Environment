@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>NM Team for “Campaign Budget” Column data visibility</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>NM Team for “Campaign Budget”</label>
+</PermissionSet>

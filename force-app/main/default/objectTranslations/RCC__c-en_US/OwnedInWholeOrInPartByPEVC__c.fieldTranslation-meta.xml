@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>OwnedInWholeOrInPartByPEVC__c</name>
+    <picklistValues>
+        <masterLabel>No, the entity is not owned by a PE/VC group</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes, the entity is owned by a PE/VC group</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

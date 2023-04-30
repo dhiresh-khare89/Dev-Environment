@@ -1,0 +1,96 @@
+<template>
+    <lightning-card title="CAPIQ Details">
+    <br/>
+    <table class = "slds-table slds-table_bordered">
+    <thead>
+    <tr class="slds-line-height_reset">
+    <th class="" scope="col">
+    <div class="slds-truncate" title="IQ_KEY_DEV_HEADLINE">IQ KEY DEV HEADLINE</div>
+    </th>
+    <th class="" scope="col">
+    <div class="slds-truncate" title="IQ_KEY_DEV_TYPE">IQ KEY DEV TYPE</div>
+    </th>
+    <th class="" scope="col">
+    <div class="slds-truncate" title="Key Development Date">Key Development Date</div>
+    </th>
+    </tr>
+    </thead>
+    <template if:true={ClientNewsData}>
+    <template for:each={ClientNewsData} for:item="item">
+    <tr class="slds-hint-parent" key={item.id}>
+    
+    <td>
+        {item.IQ_KEY_DEV_HEADLINE__c}
+    </td>
+    
+    <td>
+        {item.IQ_KEY_DEV_TYPE__c}
+    </td>
+    <td>
+        {item.Key_Development_Date__c}
+    </td>
+    </tr>
+    </template>
+    </template>
+    
+    <tbody>
+    
+    </tbody>
+    </table>
+    </lightning-card> 
+    <br/>
+    <br/>
+    <!--<hr>-->   
+    <lightning-card title="MCA Details">
+    <br/>
+    <table class = "slds-table slds-table_bordered">
+    <thead>
+    <tr class="slds-line-height_reset">
+    <th class="" scope="col">
+        <div class="slds-truncate" title="Alert">Alert</div>
+    </th>
+    <th class="" scope="col">
+        <div class="slds-truncate" title="Case_Number">Case Number</div>
+    </th>
+    <th class="" scope="col">
+        <div class="slds-truncate" title="convicted Directors">Convicted Directors</div>
+    </th>
+    <th class="" scope="col">
+        <div class="slds-truncate" title="Remarks Details">Remarks Details</div>
+    </th>
+    <th class="" scope="col">
+        <div class="slds-truncate" title="Severity">Severity</div>
+    </th>
+    </tr>
+    </thead>
+    <template if:true={ClientNewsData}>
+    <template for:each={ClientNewsData} for:item="item">
+    <tr class="slds-hint-parent" key={item.id}>
+        
+        <td>
+            {item.Alert__c}
+        </td>
+        
+        <td>
+            {item.Case_Number__c}
+        </td>
+        <td>
+            {item.convictedDirectors__c}
+        </td>
+        <td>
+            {item.remarks_details__c}
+        </td>
+        <td>
+            {item.severity__c}
+        </td>
+    </tr>
+    </template>
+    </template>
+    
+    <tbody>
+    
+    </tbody>
+    </table>
+    </lightning-card>    
+    
+</template>

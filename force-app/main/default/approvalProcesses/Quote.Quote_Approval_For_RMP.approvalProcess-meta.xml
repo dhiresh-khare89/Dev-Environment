@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>RMP__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.ClientType__c</field>
+                <operation>equals</operation>
+                <value>Non Key Client</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Quote.Recovery__c</field>
+                <operation>lessThan</operation>
+                <value>75</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>if Non Key account and recovery% &lt;75%</label>
+        <name>if_Non_Key_account_and_recovery_75</name>
+    </approvalStep>
+    <description>if Non Key account and recovery% &lt;75% then approval request will be sent to RMP</description>
+    <emailTemplate>unfiled$public/Submit_For_Quote_Approval</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Opportunity.ClientType__c</field>
+            <operation>equals</operation>
+            <value>Non Key Client</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Recovery__c</field>
+            <operation>lessThan</operation>
+            <value>75</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Quote_Final_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Quote_Final_Reject</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>true</finalRejectionRecordLock>
+    <label>Quote Approval For RMP</label>
+    <processOrder>1</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

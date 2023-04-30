@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Client Contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Client Contacts</value>
+    </caseValues>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Engagement</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ownership Hierarchy</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sector, Expertise &amp; Corridor</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Create_Meeting</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>Chamber_Contacts</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>GTClientContacts</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Investor_Contacts</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>LawFirmContacts</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Change_Contact_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Other_Passions_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>TypeOfAssociation_Must_If_Chamber_Contct</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_to_Prospect_Insight</name>
+    </webLinks>
+</CustomObjectTranslation>

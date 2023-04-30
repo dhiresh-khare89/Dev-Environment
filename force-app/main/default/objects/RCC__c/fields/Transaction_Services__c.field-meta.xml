@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transaction_Services__c</fullName>
+    <externalId>false</externalId>
+    <label>Transaction Services</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Transaction type - M&amp;A advisory</fullName>
+                <default>false</default>
+                <label>Transaction type - M&amp;A advisory</label>
+            </value>
+            <value>
+                <fullName>Transaction type - Capital markets</fullName>
+                <default>false</default>
+                <label>Transaction type - Capital markets</label>
+            </value>
+            <value>
+                <fullName>Transaction type - Financial due diligence</fullName>
+                <default>false</default>
+                <label>Transaction type - Financial due diligence</label>
+            </value>
+            <value>
+                <fullName>Transaction type - Operational deal services</fullName>
+                <default>false</default>
+                <label>Transaction type - Operational deal services</label>
+            </value>
+            <value>
+                <fullName>Transaction type - Valuations</fullName>
+                <default>false</default>
+                <label>Transaction type - Valuations</label>
+            </value>
+            <value>
+                <fullName>Transaction type - Commercial and strategic intelligence</fullName>
+                <default>false</default>
+                <label>Transaction type - Commercial and strategic intelligence</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

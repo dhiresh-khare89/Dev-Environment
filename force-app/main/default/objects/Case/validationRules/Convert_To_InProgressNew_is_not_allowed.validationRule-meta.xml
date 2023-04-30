@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Convert_To_InProgressNew_is_not_allowed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( PRIORVALUE(Status), &apos;Closed&apos;),
+OR(ISPICKVAL(Status , &quot;New&quot;),ISPICKVAL(Status , &quot;In Progress&quot;), ISPICKVAL(Status , &quot;Converted To New Client&quot;)),
+ISCHANGED(Status))</errorConditionFormula>
+    <errorMessage>&apos;Closed&apos; to Converted To New Client/New is not allowed</errorMessage>
+</ValidationRule>

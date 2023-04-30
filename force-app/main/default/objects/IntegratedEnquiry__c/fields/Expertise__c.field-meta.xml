@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expertise__c</fullName>
+    <externalId>false</externalId>
+    <label>Expertise</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Solution1__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Expertise</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Strategy execution support to CEO office</controllingFieldValue>
+            <controllingFieldValue>Managed Transformation Office solution</controllingFieldValue>
+            <controllingFieldValue>PMO Services</controllingFieldValue>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>Payment Solutions for Banks, NBFCs, Insurance Companies</controllingFieldValue>
+            <controllingFieldValue>Payment Solutions for consumer sector</controllingFieldValue>
+            <valueName>FS Consulting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IND AS for insurance, banking and mutual funds</controllingFieldValue>
+            <controllingFieldValue>Unlocking value through India listings</controllingFieldValue>
+            <controllingFieldValue>Gold Standard Audit for NBFC</controllingFieldValue>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>India led Global Assurance</controllingFieldValue>
+            <controllingFieldValue>Statutory &amp; Internal audits</controllingFieldValue>
+            <controllingFieldValue>Global Audit Delivery</controllingFieldValue>
+            <controllingFieldValue>REITs &amp; InVITs Advisory</controllingFieldValue>
+            <valueName>Audit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IND AS for insurance, banking and mutual funds</controllingFieldValue>
+            <controllingFieldValue>Inbound Investment Support (CFO Services)</controllingFieldValue>
+            <controllingFieldValue>Transition to new assets/investment measurement norms of RBI</controllingFieldValue>
+            <controllingFieldValue>Unlocking value through India listings</controllingFieldValue>
+            <controllingFieldValue>ECL Modelling</controllingFieldValue>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>IFRS 17 advisory</controllingFieldValue>
+            <controllingFieldValue>Unlocking value through Overseas Listings</controllingFieldValue>
+            <controllingFieldValue>India led Global risk assurance</controllingFieldValue>
+            <controllingFieldValue>Global Tax optimization</controllingFieldValue>
+            <controllingFieldValue>Global compliance and reporting</controllingFieldValue>
+            <controllingFieldValue>Digitizing and transforming your tax function</controllingFieldValue>
+            <controllingFieldValue>Risk based special reviews</controllingFieldValue>
+            <controllingFieldValue>Compliance Managed Services (GTCMS)</controllingFieldValue>
+            <controllingFieldValue>Personal Compliance Dashboard</controllingFieldValue>
+            <controllingFieldValue>Moving towards efficient financial reporting &amp; managing compliances</controllingFieldValue>
+            <controllingFieldValue>REITs &amp; InVITs Advisory</controllingFieldValue>
+            <controllingFieldValue>Grant Processing &amp; Assurance</controllingFieldValue>
+            <controllingFieldValue>BPS, Financial Reporting Advisory Services and Fund Reporting</controllingFieldValue>
+            <valueName>CFO Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fund Raise &amp; IPO Support</controllingFieldValue>
+            <controllingFieldValue>Digitally transforming supply chains</controllingFieldValue>
+            <controllingFieldValue>Unlocking value through India listings</controllingFieldValue>
+            <controllingFieldValue>Transforming your business and finance function - Digital Transformation for captives (GCCs)</controllingFieldValue>
+            <controllingFieldValue>Ready to transform – emerging TMT Cos.</controllingFieldValue>
+            <controllingFieldValue>Enabling your sustainability agenda</controllingFieldValue>
+            <controllingFieldValue>GIFT City set-ups</controllingFieldValue>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>Procurement Strategy: Procurement, Cost Optimization, and Sales to OEMs</controllingFieldValue>
+            <controllingFieldValue>Downstream - Dealer profitability &amp; continuity solutions</controllingFieldValue>
+            <controllingFieldValue>FDD</controllingFieldValue>
+            <controllingFieldValue>Unlocking value through Overseas Listings</controllingFieldValue>
+            <controllingFieldValue>Infra consulting roads, Transportation, water &amp; so on.</controllingFieldValue>
+            <controllingFieldValue>Ops Consulting for Life Sciences</controllingFieldValue>
+            <controllingFieldValue>Transactions (incl Valuations)</controllingFieldValue>
+            <controllingFieldValue>Sales &amp; Cx optimization</controllingFieldValue>
+            <controllingFieldValue>Organisation alignment</controllingFieldValue>
+            <controllingFieldValue>REITs &amp; InVITs Advisory</controllingFieldValue>
+            <controllingFieldValue>Growth strategy for RE cos</controllingFieldValue>
+            <valueName>Growth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enabling eComm</controllingFieldValue>
+            <controllingFieldValue>Transforming your business and finance function - Digital Transformation for captives (GCCs)</controllingFieldValue>
+            <controllingFieldValue>GRC Transformation Solutions - Integrated GRC Technology</controllingFieldValue>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>Digital &amp; Cyber - Automotive standards</controllingFieldValue>
+            <controllingFieldValue>Cyber &amp; Digital transformation</controllingFieldValue>
+            <controllingFieldValue>Digital transformation solutions</controllingFieldValue>
+            <controllingFieldValue>Digital, Data Analytics and Financial Transformation</controllingFieldValue>
+            <valueName>DGTL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG (incl. responsible procurement)</controllingFieldValue>
+            <controllingFieldValue>Philanthropy &amp; CSR Impact</controllingFieldValue>
+            <controllingFieldValue>ESG Advisory</controllingFieldValue>
+            <controllingFieldValue>Cyber &amp; ESH Diligence</controllingFieldValue>
+            <controllingFieldValue>Enabling your sustainability agenda</controllingFieldValue>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>ESG</controllingFieldValue>
+            <controllingFieldValue>Stat Audit</controllingFieldValue>
+            <controllingFieldValue>ESG advisory &amp; reporting</controllingFieldValue>
+            <valueName>ESG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Threat Intelligence, Digital Security, Data Privacy, VAPT, Compliance services such as Payment Security</controllingFieldValue>
+            <controllingFieldValue>Cyber Maturity Assessments, Managed Security Service</controllingFieldValue>
+            <controllingFieldValue>Cyber &amp; ESH Diligence</controllingFieldValue>
+            <controllingFieldValue>Protecting your data - Data Protection, Privacy Advisory</controllingFieldValue>
+            <controllingFieldValue>Transforming your business and finance function - Digital Transformation for captives (GCCs)</controllingFieldValue>
+            <controllingFieldValue>System Audits, Cyber Audits, Compliance Audits, SecOps</controllingFieldValue>
+            <controllingFieldValue>Gold Standard Audit for NBFC</controllingFieldValue>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>Digital &amp; Cyber - Automotive standards</controllingFieldValue>
+            <controllingFieldValue>Getting ready for PE &amp; Beyond</controllingFieldValue>
+            <controllingFieldValue>Securing your tech systems (Cyber security &amp; SOC)</controllingFieldValue>
+            <controllingFieldValue>India led Global risk assurance</controllingFieldValue>
+            <controllingFieldValue>Transforming your risk function (advisory &amp; staff augmentation)</controllingFieldValue>
+            <controllingFieldValue>Data Protection, Privacy &amp; Governance for Healthcare and e-pharmacies</controllingFieldValue>
+            <controllingFieldValue>Cyber &amp; IT Risk</controllingFieldValue>
+            <valueName>Cyber &amp; IT Risk (Cyber)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-IPO advisory</controllingFieldValue>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>Family office</controllingFieldValue>
+            <controllingFieldValue>Second Residence</controllingFieldValue>
+            <controllingFieldValue>Estate Planning</controllingFieldValue>
+            <controllingFieldValue>Personal Compliance Dashboard</controllingFieldValue>
+            <controllingFieldValue>Family Governance</controllingFieldValue>
+            <controllingFieldValue>GenNext Induction</controllingFieldValue>
+            <valueName>Private Client Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-IPO advisory</controllingFieldValue>
+            <controllingFieldValue>Philanthropy &amp; CSR Impact</controllingFieldValue>
+            <controllingFieldValue>Tax calculation for NAV working of Cat III AIF</controllingFieldValue>
+            <controllingFieldValue>US Estate Tax Planning</controllingFieldValue>
+            <controllingFieldValue>Unlocking value through India listings</controllingFieldValue>
+            <controllingFieldValue>Ready to transform – emerging TMT Cos.</controllingFieldValue>
+            <controllingFieldValue>RPT Governance Solution</controllingFieldValue>
+            <controllingFieldValue>GIFT City set-ups</controllingFieldValue>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>GTAXPRO, Automation Solution for Returns, State Incentive Policies, PLI Support</controllingFieldValue>
+            <controllingFieldValue>Private Equity deal structuring</controllingFieldValue>
+            <controllingFieldValue>US Tax</controllingFieldValue>
+            <controllingFieldValue>M&amp;A Tax</controllingFieldValue>
+            <controllingFieldValue>Unlocking value through Overseas Listings</controllingFieldValue>
+            <controllingFieldValue>Unlocking value through M&amp;A and PE  (deal advisory)</controllingFieldValue>
+            <controllingFieldValue>Digitizing and transforming your tax function</controllingFieldValue>
+            <controllingFieldValue>Workforce transformation: HR advisory and ESOP Planning</controllingFieldValue>
+            <controllingFieldValue>Tax advisory (Incentives)</controllingFieldValue>
+            <controllingFieldValue>Infra consulting roads, Transportation, water &amp; so on.</controllingFieldValue>
+            <controllingFieldValue>Optimising ITC &amp; promotional schemes – life sciences and healthcare</controllingFieldValue>
+            <controllingFieldValue>Tax Litigation &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Govt. Incentives</controllingFieldValue>
+            <controllingFieldValue>REITs &amp; InVITs Advisory</controllingFieldValue>
+            <valueName>Tax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital Forensics</controllingFieldValue>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>ABC Diligence</controllingFieldValue>
+            <controllingFieldValue>Getting ready for PE &amp; Beyond</controllingFieldValue>
+            <controllingFieldValue>India led Global risk assurance</controllingFieldValue>
+            <controllingFieldValue>Transforming your risk function (advisory &amp; staff augmentation)</controllingFieldValue>
+            <controllingFieldValue>Forensic &amp; Dispute Litigation</controllingFieldValue>
+            <controllingFieldValue>Controls Stress Testing</controllingFieldValue>
+            <valueName>Forensic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>QA for GRC functions</controllingFieldValue>
+            <controllingFieldValue>Gold Standard Audit for NBFC</controllingFieldValue>
+            <controllingFieldValue>GRC Transformation Solutions - Integrated GRC Technology</controllingFieldValue>
+            <controllingFieldValue>Early fraud/financial misconduct warning signals for lending institutions</controllingFieldValue>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>Actuarial Model Validation and Model Governance</controllingFieldValue>
+            <controllingFieldValue>FS Risk services such as Internal Audit, Market &amp; Credit Risk</controllingFieldValue>
+            <valueName>FS Risk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ECL Modelling</controllingFieldValue>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>Cost Pass Through Solutions</controllingFieldValue>
+            <controllingFieldValue>Internal Audit</controllingFieldValue>
+            <controllingFieldValue>Statutory &amp; Internal audits</controllingFieldValue>
+            <controllingFieldValue>Risk based special reviews</controllingFieldValue>
+            <controllingFieldValue>Auto Analytics Solution (Automating Control Procedures and Business Analytics)</controllingFieldValue>
+            <valueName>Risk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GRC Transformation Solutions - Integrated GRC Technology</controllingFieldValue>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>Pharma/ Med Devices: Computerized System Validation (CSV Solution)</controllingFieldValue>
+            <valueName>Technology Advisory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>IDD &amp; Discreet CDD</controllingFieldValue>
+            <valueName>Corporate Intelligence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <valueName>GT Global Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>ESOP</controllingFieldValue>
+            <controllingFieldValue>Organisation structuring</controllingFieldValue>
+            <controllingFieldValue>GenNext Induction</controllingFieldValue>
+            <valueName>Human Capital Consulting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <valueName>IKCC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>EV Financing Solution</controllingFieldValue>
+            <controllingFieldValue>Unlocking value through M&amp;A and PE  (deal advisory)</controllingFieldValue>
+            <controllingFieldValue>Start-ups &amp; Unicorns advisory(fund-raise and digitization of finance and business functions)</controllingFieldValue>
+            <controllingFieldValue>M&amp;A for Biosimilars</controllingFieldValue>
+            <controllingFieldValue>Transactions (incl Valuations)</controllingFieldValue>
+            <valueName>Lead Advisory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <valueName>Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>Infra consulting roads, Transportation, water &amp; so on.</controllingFieldValue>
+            <controllingFieldValue>Agri competitiveness &amp; alternative markets</controllingFieldValue>
+            <controllingFieldValue>Skill PMU</controllingFieldValue>
+            <controllingFieldValue>Smart City / Water / Transport</controllingFieldValue>
+            <controllingFieldValue>Sports Advisory (PMUs, Events)</controllingFieldValue>
+            <controllingFieldValue>MSME ecosystem development</controllingFieldValue>
+            <controllingFieldValue>Citizen Services - e-Distt, CM Dashboards, e-Pragati</controllingFieldValue>
+            <controllingFieldValue>Aviation and Defence</controllingFieldValue>
+            <controllingFieldValue>E-commerce market place</controllingFieldValue>
+            <controllingFieldValue>Municipalities / Local Government (WASH, Municipal Finance, Amrut)</controllingFieldValue>
+            <controllingFieldValue>Advanced Analytics Design and Implementation</controllingFieldValue>
+            <controllingFieldValue>Govt. Incentives</controllingFieldValue>
+            <controllingFieldValue>Promoting women livelihoods</controllingFieldValue>
+            <controllingFieldValue>Gati Shakti / Logistics Infrastructure</controllingFieldValue>
+            <controllingFieldValue>Digital Agri</controllingFieldValue>
+            <controllingFieldValue>Health / Digital Health</controllingFieldValue>
+            <valueName>Public Sector Consulting (PSC)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <controllingFieldValue>Restructuring &amp; Insolvency</controllingFieldValue>
+            <valueName>Recovery &amp; Reorganisation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other solutions</controllingFieldValue>
+            <valueName>Transformation Solutions</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

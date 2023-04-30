@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IfExpAuditSelectTypeOfAppointment__c</fullName>
+    <externalId>false</externalId>
+    <label>If Exp=Audit,Select Type Of Appointment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Appointment as auditor</fullName>
+                <default>false</default>
+                <label>Appointment as auditor</label>
+            </value>
+            <value>
+                <fullName>Appointment as first auditor</fullName>
+                <default>false</default>
+                <label>Appointment as first auditor</label>
+            </value>
+            <value>
+                <fullName>Continuing appointment</fullName>
+                <default>false</default>
+                <label>Continuing appointment</label>
+            </value>
+            <value>
+                <fullName>Filling up Casual Vacancy</fullName>
+                <default>false</default>
+                <label>Filling up Casual Vacancy</label>
+            </value>
+            <value>
+                <fullName>Reappointment as an Auditor</fullName>
+                <default>false</default>
+                <label>Reappointment as an Auditor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

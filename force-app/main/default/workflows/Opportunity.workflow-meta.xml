@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Approval_Approved_Date</fullName>
+        <field>CCApprovedRejectedDate__c</field>
+        <formula>TODAY()</formula>
+        <name>Approval Approved Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Rejected_Date</fullName>
+        <field>CCApprovedRejectedDate__c</field>
+        <formula>TODAY()</formula>
+        <name>Approval Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Approve</fullName>
+        <field>QRMG_checklist__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approval Status Approve</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Approved</fullName>
+        <field>CCApprovalStatus__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approval Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Reject</fullName>
+        <field>QRMG_checklist__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Approval Status Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Rejected</fullName>
+        <field>CCApprovalStatus__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Approval Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DS_Team_Approval_Rejected</fullName>
+        <field>StatusDSTeamRemarkStatus__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>DS Team Approval Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DS_Team_Approval_Status</fullName>
+        <field>StatusDSTeamRemarkStatus__c</field>
+        <literalValue>Approved</literalValue>
+        <name>DS Team Approval Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DS_Team_Approved_Date</fullName>
+        <field>DSTeamApprovalRejectionDate__c</field>
+        <formula>TODAY()</formula>
+        <name>DS Team Approved Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DS_Team_Rejected_Date</fullName>
+        <field>DSTeamApprovalRejectionDate__c</field>
+        <formula>TODAY()</formula>
+        <name>DS Team Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DS_Team_Status_Approved</fullName>
+        <field>StatusDSTeamRemarkStatus__c</field>
+        <literalValue>Approved</literalValue>
+        <name>DS Team Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Engagement_Team_Apprval_Status</fullName>
+        <field>EngagementTeamApprovalStatus__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Engagement Team Apprval Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Engagement_Team_Apprval_Status_Pending</fullName>
+        <field>EngagementTeamApprovalStatus__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Engagement Team Apprval Status Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Engagement_Team_Apprval_Status_Rejected</fullName>
+        <field>EngagementTeamApprovalStatus__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Engagement Team Apprval Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NSL_Approval_Status_Approved</fullName>
+        <field>NSLApprovalStatus__c</field>
+        <literalValue>Approved</literalValue>
+        <name>NSL Approval Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NSL_Approval_Status_Rejected</fullName>
+        <field>NSLApprovalStatus__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>NSL Approval Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NSL_Approved_Date</fullName>
+        <field>NSLApprovedRejectedDate__c</field>
+        <formula>TODAY()</formula>
+        <name>NSL Approved Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NSL_Rejected_Date</fullName>
+        <field>NSLApprovedRejectedDate__c</field>
+        <formula>TODAY()</formula>
+        <name>NSL Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RCC_Approved_Date</fullName>
+        <field>RCCApprovedDate__c</field>
+        <formula>TODAY()</formula>
+        <name>RCC Approved Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>REL_BUL_Approval_Status</fullName>
+        <description>RCC Status will be set to Approved if REL/BUL Approved</description>
+        <field>RCCStatus__c</field>
+        <literalValue>Approved</literalValue>
+        <name>REL/BUL Approval Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>REL_BUL_Rejection_Status</fullName>
+        <description>RCC Status will be set to Rejected if REL/BUL Rejected</description>
+        <field>RCCStatus__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>REL/BUL Rejection Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>REL_BUL_Status_Approved</fullName>
+        <field>REL_BUL_Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>REL/BUL Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>REL_BUL_Status_Pending</fullName>
+        <field>REL_BUL_Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>REL/BUL Status Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>REL_BUL_Status_Pending1</fullName>
+        <field>REL_BUL_Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>REL/BUL Status Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>REL_BUL_Status_Rejected</fullName>
+        <field>REL_BUL_Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>REL/BUL Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Stage_Update_to_Closed_Won</fullName>
+        <field>StageName</field>
+        <literalValue>Closed Won</literalValue>
+        <name>Stage Update to Closed Won</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_NSL_Discussion</fullName>
+        <field>NSL_Discussion_Status__c</field>
+        <literalValue>Post NSL Discussion</literalValue>
+        <name>Update NSL Discussion</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_NSL_Discussion_Status</fullName>
+        <field>NSL_Discussion_Status__c</field>
+        <literalValue>Post NSL Discussion</literalValue>
+        <name>Update NSL Discussion Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_NS_Discussion</fullName>
+        <field>NSL_Discussion_Status__c</field>
+        <literalValue>Pending Discussion</literalValue>
+        <name>Update NS: Discussion</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

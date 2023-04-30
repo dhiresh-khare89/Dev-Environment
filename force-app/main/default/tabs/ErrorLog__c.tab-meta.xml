@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customObject>true</customObject>
+    <description>Error Log object is used to store all the application exception. So We can understand and Solve the Problem.</description>
+    <motif>Custom21: Computer</motif>
+</CustomTab>

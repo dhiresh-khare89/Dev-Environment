@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provision_of_Audit_Accountancy_Training__c</fullName>
+    <description>Provision of audit training, accountancy and software training.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Provision of audit training, accountancy and software training.</inlineHelpText>
+    <label>Provision of Audit, Accountancy Training</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Provision of audit training, accountancy and software training.</fullName>
+                <default>false</default>
+                <label>Provision of audit training, accountancy and software training.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

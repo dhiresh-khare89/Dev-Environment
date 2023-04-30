@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>only_SBP_or_NSL_can_change_owner</fullName>
+    <active>true</active>
+    <description>Only Sector Business Partner or NSL user can change the New Client Owner</description>
+    <errorConditionFormula>AND(
+    ISCHANGED( OwnerId ),
+    NOT( ISNEW() ),
+    ( NOT(  
+          OR(
+              $User.Id  ==  SectorCoordinator__c ,
+              $User.Id ==  NSL__c ,
+              $Profile.Name == &apos;System Administrator&apos; , 
+              $Profile.Name == &apos;SectorAssignment&apos; ,
+               ISPICKVAL( Sector__c , &apos;Others&apos;) 
+            ) 
+         ) 
+    )     
+)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Only Sector Business Partner or NSL can change the New Client Owner</errorMessage>
+</ValidationRule>

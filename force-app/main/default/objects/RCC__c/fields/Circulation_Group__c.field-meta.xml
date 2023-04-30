@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Circulation_Group__c</fullName>
+    <externalId>false</externalId>
+    <label>Circulation Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All Users</fullName>
+                <default>false</default>
+                <label>All Users</label>
+            </value>
+            <value>
+                <fullName>For NRCC</fullName>
+                <default>false</default>
+                <label>For NRCC</label>
+            </value>
+            <value>
+                <fullName>Partner and Director</fullName>
+                <default>false</default>
+                <label>Partner and Director</label>
+            </value>
+            <value>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+                <label>Analyst</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

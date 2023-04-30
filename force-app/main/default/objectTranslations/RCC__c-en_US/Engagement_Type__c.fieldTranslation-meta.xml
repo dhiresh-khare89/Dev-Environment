@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Engagement_Type__c</name>
+    <picklistValues>
+        <masterLabel>Financial statement audit - Component &amp; Statutory Auditor</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial statement audit - Component Auditor</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial statement audit - Group Auditor</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial statement audit - Statutory Auditor</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial statement review</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other audit services - Please provide below specific details on the audit services being performed:</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

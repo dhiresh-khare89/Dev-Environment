@@ -1,0 +1,40 @@
+<template>
+<lightning-card>
+<div align="right">
+    <lightning-button label="Export to PDF" variant="brand"
+        onclick={exportToPdf}>
+    </lightning-button>
+    </div>
+    <br/>
+<table class = "slds-table slds-table_bordered">
+<thead>
+    <tr class="slds-line-height_reset">
+        <th class="" scope="col">
+            <div class="slds-truncate" title="Quote Line Item Id">Id</div>
+        </th>
+        <th class="" scope="col">
+            <div class="slds-truncate" title="Opportunity Name">Opportunity Name</div>
+        </th>
+        <th class="" scope="col">
+            <div class="slds-truncate" title="Quote Name">Quote Name</div>
+        </th>
+    </tr>
+    </thead>
+    <template for:each={QuoteWithQuoteLineItems} for:item="item">
+        <tr class="slds-hint-parent" key={item.id}>
+            <td>
+                {item.Id}
+            </td>
+            <td>
+                {item.Quote.Opportunity.Name}
+            </td>
+            <td>
+                {item.Quote.Name}
+            </td>
+        </tr>
+    </template>
+    <tbody>
+    </tbody>
+</table>
+</lightning-card>
+</template>

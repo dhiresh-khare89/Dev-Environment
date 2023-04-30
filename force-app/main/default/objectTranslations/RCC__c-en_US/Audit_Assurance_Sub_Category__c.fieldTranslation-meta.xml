@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Audit_Assurance_Sub_Category__c</name>
+    <picklistValues>
+        <masterLabel>Audit and/or Review of Financial Statements</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial reporting advisory</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Assurance services</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others Services (Please describe)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

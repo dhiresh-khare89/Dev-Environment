@@ -1,0 +1,561 @@
+<template>
+
+      <lightning-card>
+            <lightning-accordion allow-multiple-sections-open active-section-name={activeAccordionSections}>
+                  <lightning-accordion-section name="companies" class="slds-form-element_horizontal slds-is-open"
+                        label="Clients">
+
+                        <lightning-layout multiple-rows>
+                              <lightning-layout-item size="12" padding="around-small" small-device-size="3"
+                                    medium-device-size="6" large-device-size="3">
+                                    <lightning-input type="search" variant="standard" name="name" label="Client Name"
+                                          value={searchString} onkeypress={handleChange} onchange={handleChange}>
+                                    </lightning-input>
+
+
+                              </lightning-layout-item>
+
+                              <lightning-layout-item size="12" padding="around-small" small-device-size="3"
+                                    medium-device-size="6" large-device-size="3">
+                                    <c-generic-picklist field-a-p-i-name="Country__c" label="Country" name="Country"
+                                          value={CountryNameValue} onpicklistchange={handleCountryNameChange}
+                                          obj-a-p-i-name="Lead" required="true"> </c-generic-picklist>
+
+
+
+                              </lightning-layout-item>
+
+
+                              <!-- below combobox will be filled by api results
+
+						 <lightning-layout-item size="12" padding="around-small" small-device-size="3"
+							medium-device-size="6" large-device-size="3">
+							<lightning-combobox name="Companies" label="Companies" value={value}
+								placeholder="Select Company" options={options} onchange={handleComboxChange}>
+							</lightning-combobox>
+						</lightning-layout-item> -->
+
+
+                        </lightning-layout>
+
+                        <template if:true={ifResult}>
+                              <div><b>Kindly close the New Client and create an Enquiry against the client account</b>
+                              </div>
+                              <div class="slds-scrollable" style="height:100%;width:100%">
+
+                                    <table
+                                          class="slds-table slds-no-row-hover slds-table_bordered slds-table_col-bordered size=12 small-device-size=6 medium-device-size=4 large-device-size=3">
+                                          <thead>
+                                                <tr class="slds-line-height_reset">
+                                                      <th class="" scope="col">
+                                                            <div class="slds-truncate" title="rowNumber">Sr.No.</div>
+                                                      </th>
+
+                                                      <th class="" scope="col">
+                                                            <div class="slds-truncate" title="Name">New Client Name
+                                                            </div>
+                                                      </th>
+                                                      <th class="" scope="col">
+                                                            <div class="slds-truncate" title="Last Name">Client Group
+                                                            </div>
+                                                      </th>
+                                                      <th class="" scope="col">
+                                                            <div class="slds-truncate" title="Owner Name">Owner Name
+                                                            </div>
+                                                      </th>
+                                                </tr>
+                                          </thead>
+                                          <tbody>
+                                                <template for:each={clientData} for:item="acc">
+                                                      <tr key={acc.Id}>
+                                                            <th scope="col">
+                                                                  <div>{acc.rowNumber}</div>
+                                                            </th>
+                                                            <th scope="col">
+                                                                  <div><a data-id={acc.Id}
+                                                                              onclick={handleClientClick}>{acc.Name}</a>
+                                                                  </div>
+                                                            </th>
+                                                            <th scope="col">
+                                                                  <template if:true={acc.ShowParent}>
+
+                                                                        <div>{acc.Parent.Name}</div>
+
+                                                                  </template>
+
+                                                            </th>
+                                                            <th scope="col">
+                                                                  <div>{acc.Owner.Name}</div>
+                                                            </th>
+                                                            <th scope="col">
+                                                                  <div><lightning-button data-id={acc.Id}
+                                                                              label="Create Enquiry"
+                                                                              onclick={handleCreateEnquiry}>Create
+                                                                              Enquiry</lightning-button></div>
+                                                            </th>
+                                                      </tr>
+                                                </template>
+                                          </tbody>
+                                    </table>
+
+                              </div>
+
+
+
+                        </template>
+
+
+                        <template if:true={ifclick}>
+                              <div><b>Enter Client Name to Search</b></div><br>
+                        </template>
+                        <template if:true={ifSearch}>
+                              <template if:false={ifExternalData}>
+                                    <div><b><img style="max-height: 20px" alt="" src={exclamationImage} />Sorry, There
+                                                are no matches for your search in Existing Database. <br>Kidly proceed
+                                                to search from External Database</b></div><br>
+                              </template>
+                        </template>
+                        <template if:true={ifExternalData}>
+                              <div><b><img style="max-height: 20px" alt="" src={exclamationImage} />Sorry, There are no
+                                          matches for your search in External Database. <br> Kindly proceed to create
+                                          New Client</b></div><br>
+                        </template>
+                        <template if:true={showexternalbutton}>
+                              <lightning-layout if:false={ifExternalData}>
+                                    <lightning-layout-item size="12" padding="around-small" small-device-size="3"
+                                          medium-device-size="6" large-device-size="3">
+                                          <lightning-button variant="brand" label="Search from External Databases"
+                                                title="" onclick={handleClick} style="float: left;">
+                                          </lightning-button>
+
+                                    </lightning-layout-item>
+                              </lightning-layout>
+                        </template>
+                        <template if:true={ifExisting}>
+
+                        </template>
+
+                        <div><br><br></div>
+                        <!-- by ravi-->
+                        <template if:true={ifData}>
+                              <b>Results from External Database</b>
+                              <div class="slds-box">
+                                    <lightning-datatable data={arrDataList} columns={cols} key-field="Id"
+                                          hide-checkbox-column="true" show-row-number-column="true"
+                                          onrowaction={callRowAction}> >
+                                    </lightning-datatable>
+                              </div>
+                        </template>
+                        <!-- /by ravi-->
+
+                        <!-- <template for:each={clientData} for:item="item">
+						<div key={item.id}>{item.Name}</div>
+						<template if:true={showError}>
+						<p style="color : red; font-weight : 800;">
+							This client already exist...
+						</p>
+					</template>
+					</template> -->
+
+
+                  </lightning-accordion-section>
+            </lightning-accordion>
+
+
+            <lightning-record-edit-form object-api-name={newClientObjName} layout-type="Compact"
+                  onsuccess={handleSubmit} onerror={handleError}>
+                  <lightning-accordion allow-multiple-sections-open active-section-name={activeAccordionSections}>
+
+
+                        <template if:true={showAccordians}>
+
+                              <lightning-accordion-section name="details"
+                                    class="slds-form-element_horizontal slds-is-open" label="Details">
+                                    <lightning-layout multiple-rows>
+
+
+                                          <lightning-layout-item size="12" padding="around-small" small-device-size="6"
+                                                medium-device-size="6" large-device-size="6">
+                                                <lightning-input-field field-name="Name" class="" required>
+                                                </lightning-input-field>
+
+                                          </lightning-layout-item>
+                                          <lightning-layout-item size="12" padding="around-small" small-device-size="6"
+                                                medium-device-size="6" large-device-size="6">
+                                                <lightning-input-field field-name="Company" class="slds-m-around_small"
+                                                      value={companyName} disabled>
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Email" class="slds-m-around_small"
+                                                      value={companyEmail} required>
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="CountryCode__c"
+                                                      onchange={handleCountryCodeChange} value={countryCode}
+                                                      class="slds-m-around_small" required>
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="MobilePhone" onchange={inputchange}
+                                                      onmouseout={handleMouseoutOnMobile}
+                                                      class="phone_number__c slds-m-around_small "
+                                                      value={companyMobilePhone} required>
+                                                </lightning-input-field>
+
+
+                                                <lightning-input-field field-name="Website" value={companyWebsite}
+                                                      class="slds-m-around_small slds-hidden" style="display: none;">
+                                                </lightning-input-field>
+
+
+
+                                          </lightning-layout-item>
+                                    </lightning-layout>
+                              </lightning-accordion-section>
+
+                              <lightning-accordion-section name="sectors"
+                                    class="slds-form-element_horizontal slds-is-open"
+                                    label="Sector, Expertise & Corridor">
+
+                                    <lightning-layout multiple-rows>
+                                          <lightning-layout-item size="12" padding="around-small" small-device-size="6"
+                                                medium-device-size="6" large-device-size="6">
+                                                <lightning-input-field field-name="Sector__c" value={companySector}
+                                                      class="slds-m-around_small" required>
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="SubSector__c"
+                                                      value={companySubsector} class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Solution__c" value={companySolution}
+                                                      class="slds-m-around_small" onchange={handlesolution}>
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Corridor__c" value={companyCorridor}
+                                                      class="slds-m-around_small slds-hidden " style="display:none;">
+                                                </lightning-input-field>
+
+                                                <lightning-input-field field-name="capIQId__c" value={capIQ}
+                                                      class="slds-m-around_small slds-hidden" style="display:none;">
+                                                </lightning-input-field>
+
+                                          </lightning-layout-item>
+                                          <lightning-layout-item size="12" padding="around-small" small-device-size="6"
+                                                medium-device-size="6" large-device-size="6">
+
+                                                <!--<lightning-input-field field-name="SubExpertise__c" value={companySubExpertise} class="slds-m-around_small " onchange={handlesubexperties}>
+								</lightning-input-field>-->
+                                                <lightning-input-field field-name="Expertise__c"
+                                                      value={companyExpertise} class="slds-m-around_small"
+                                                      onchange={handleexpertychange}>
+                                                </lightning-input-field>
+
+                                          </lightning-layout-item>
+
+
+
+                                    </lightning-layout>
+                              </lightning-accordion-section>
+
+
+                              <lightning-accordion-section name="address"
+                                    class="slds-form-element_horizontal slds-is-open" label="Address Details">
+                                    <lightning-layout multiple-rows>
+                                          <lightning-layout-item size="12" padding="around-small" small-device-size="6"
+                                                medium-device-size="6" large-device-size="6">
+
+                                                <lightning-input-field field-name="Address" value={companyAddress}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+
+                                          </lightning-layout-item>
+
+
+                                    </lightning-layout>
+                              </lightning-accordion-section>
+
+                              <lightning-accordion-section name="referralInfo"
+                                    class="slds-form-element_horizontal slds-is-open" label="Referral Information">
+                                    <lightning-layout multiple-rows>
+                                          <lightning-layout-item size="12" padding="around-small" small-device-size="6"
+                                                medium-device-size="6" large-device-size="6">
+                                                <lightning-input-field field-name="Channel__c"
+                                                      onchange={handleNewClientSource}
+                                                      onmouseout={handleNewClientSourceClick}
+                                                      class="slds-m-around_small " value={channelValue}>
+                                                </lightning-input-field>
+                                          </lightning-layout-item>
+
+                                          <lightning-layout-item size="12" padding="around-small" small-device-size="6"
+                                                medium-device-size="6" large-device-size="6">
+
+                                                <lightning-input-field field-name="LeadSource"
+                                                      class="slds-m-around_small slds-hidden" value="Manual"
+                                                      style="display:none;">
+                                                </lightning-input-field>
+
+                                                <!-- <c-generic-lookup record-type-name="Client" s-object-api-name="Account"
+                                                      placeholder="Search Client" required="true" onlookupupdate={handleChildData}
+                                                      if:false={isClientContactDisabled}>
+                                                </c-generic-lookup>
+
+                                                <c-generic-lookup record-type-name="Client" s-object-api-name="Contact"
+                                                      placeholder="Search Client Contact" required="true"
+                                                      if:false={isClientContactDisabled}>
+                                                </c-generic-lookup> -->
+
+
+                                                <!-- <c-generic-lookup record-type-name="Law Firm / Independent Directors"
+                                                      s-object-api-name="Account" placeholder="Search Client"
+                                                      required="true" if:false={isLowFirmDisabled}>
+                                                </c-generic-lookup> -->
+
+                                                <!-- <c-generic-lookup record-type-name="Law Firm Contacts"
+                                                      s-object-api-name="Contact" placeholder="Search Client Contact"
+                                                      required="true" if:false={isLowFirmDisabled}>
+                                                </c-generic-lookup> -->
+
+                                                <!-- <c-generic-lookup record-type-name="Chambers"
+                                                      s-object-api-name="Account" placeholder="Search Client"
+                                                      required="true" if:false={isChamberDisabled}>
+                                                </c-generic-lookup> -->
+
+                                                <!-- <c-generic-lookup record-type-name="Chamber Contacts"
+                                                      s-object-api-name="Contact" placeholder="Search Client Contact"
+                                                      required="true" if:false={isChamberDisabled}>
+                                                </c-generic-lookup> -->
+
+
+                                                <!-- <c-generic-lookup record-type-name="Investors / Private Equity Firms"
+                                                      s-object-api-name="Account" placeholder="Search Client"
+                                                      required="true" if:false={isPEVCDisabled}>
+                                                </c-generic-lookup> -->
+                                                <!-- 
+                                                <c-generic-lookup record-type-name="Investor Contacts"
+                                                      s-object-api-name="Contact" placeholder="Search Client Contact"
+                                                      required="true" if:false={isPEVCConDisabled}>
+                                                </c-generic-lookup> -->
+
+                                                <!-- <c-generic-lookup record-type-name="Client"
+                                                      s-object-api-name="Account" placeholder="Search Client"
+                                                      required="true" if:false={isGTEmpDisabled}>
+                                                </c-generic-lookup> -->
+
+                                                <!-- No GT employee record type in contact
+                                                <c-generic-lookup record-type-name="GT Client Contacts"
+                                                      s-object-api-name="Contact" placeholder="Search Client Contact"
+                                                      required="true" if:false={isGTEmpDisabled}>
+                                                </c-generic-lookup>
+                                                <c-generic-lookup record-type-name="Member Firm"
+                                                      s-object-api-name="Account" placeholder="Search Client"
+                                                      required="true" if:false={isInboundDisabled}>
+                                                </c-generic-lookup> -->
+
+                                                <!-- <c-generic-lookup record-type-name="GT Client Contacts"
+                                                      s-object-api-name="Contact" placeholder="Search Client Contact"
+                                                      required="true" if:false={isInboundDisabled}>
+                                                </c-generic-lookup> -->
+
+                                          </lightning-layout-item>
+
+                                          <lightning-layout-item size="12" padding="around-small" small-device-size="6"
+                                                medium-device-size="6" large-device-size="6">
+
+                                                <c-generic-lookup record-type-name="Client" s-object-api-name="Account"
+                                                      placeholder="Search Client" required="true"
+                                                      onlookupupdate={handleChildData}
+                                                      if:false={isClientContactDisabled}>
+                                                </c-generic-lookup>
+                                          </lightning-layout-item>
+
+
+
+                                    </lightning-layout>
+                              </lightning-accordion-section>
+
+                              <lightning-accordion-section name="capIQFields"
+                                    class="slds-form-element_horizontal  slds-hidden" label="CAPIQ FIELDS">
+                                    <lightning-layout multiple-rows>
+                                          <lightning-layout-item size="12" padding="around-small" small-device-size="6"
+                                                medium-device-size="6" large-device-size="6">
+                                                <lightning-input-field field-name="Total_Assets__c"
+                                                      onchange={handleClientName} value={totalAssets}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Total_Current_Assets__c"
+                                                      onchange={handleClientName} value={totalCurrentAssets}
+                                                      class="slds-m-around_small">
+
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Total_Current_Liabilities__c"
+                                                      onchange={handleClientName} value={totalCL}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Total_Debt__c"
+                                                      onchange={handleClientName} value={totalDebt}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Total_Equity__c"
+                                                      onchange={handleClientName} value={totalEquity}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Total_Liabilities__c"
+                                                      onchange={handleClientName} value={totalLiab}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+
+                                          </lightning-layout-item>
+                                          <lightning-layout-item size="12" padding="around-small" small-device-size="6"
+                                                medium-device-size="6" large-device-size="6">
+                                                <lightning-input-field field-name="Total_No_of_employees__c"
+                                                      onchange={handleClientName} value={employees}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Total_Revenue__c"
+                                                      onchange={handleClientName} value={totalRev}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field
+                                                      field-name="Earnings_Before_Interest_and_Taxes_EBIT__c"
+                                                      onchange={handleClientName} value={ebit}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="EBITDA__c"
+                                                      onchange={handleClientName} value={ebitda}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+
+
+                                                <lightning-input-field field-name="Ticker_Symbol__c"
+                                                      onchange={handleClientName} value={companyTickter}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Company_Status__c"
+                                                      onchange={handleClientName} value={companyStatus}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                          </lightning-layout-item>
+                                          <lightning-layout-item size="12" padding="around-small" small-device-size="6"
+                                                medium-device-size="6" large-device-size="6">
+                                                <lightning-input-field field-name="Industry__c"
+                                                      onchange={handleClientName} value={primarySIC}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="CEO_Name__c"
+                                                      onchange={handleClientName} value={ceoName}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Global_Ultimate_Owner__c"
+                                                      onchange={handleClientName} value={iqULTParent}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Public_Private_Company__c"
+                                                      onchange={handleClientName} value={companyType}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <!--<lightning-input-field field-name="Business_Short_Description__c"  onchange={handleClientName} value={shortDescription} class="slds-m-around_small">
+								</lightning-input-field>-->
+
+
+
+                                          </lightning-layout-item>
+
+                                          <lightning-layout-item size="12" padding="around-small" small-device-size="6"
+                                                medium-device-size="6" large-device-size="6">
+
+                                                <lightning-input-field field-name="Stock_Exchange_symbol__c"
+                                                      onchange={handleClientName} value={exchange}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Company_Website__c"
+                                                      onchange={handleClientName} value={companyWebsite}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Company_Overview__c"
+                                                      onchange={handleClientName} value={longDescription}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Year_Founded__c"
+                                                      onchange={handleClientName} value={yearFounded}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Chairman_Name__c"
+                                                      onchange={handleClientName} value={chairmanName}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+
+
+
+
+                                          </lightning-layout-item>
+                                          <lightning-layout-item size="12" padding="around-small" small-device-size="6"
+                                                medium-device-size="6" large-device-size="6">
+
+                                                <lightning-input-field field-name="Country_of_Incorporation__c"
+                                                      onchange={handleClientName} value={countryINC}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Total_Revenue__c"
+                                                      onchange={handleClientName} value={iqRev}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="Board_of_Directors__c"
+                                                      onchange={handleClientName} value={boardMember}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+                                                <lightning-input-field field-name="MCA_ID__c"
+                                                      onchange={handleClientName} value={mcaId}
+                                                      class="slds-m-around_small">
+                                                </lightning-input-field>
+
+                                          </lightning-layout-item>
+
+                                    </lightning-layout>
+                              </lightning-accordion-section>
+
+                              <div style="width:fit-content; margin:0px auto;">
+                                    <lightning-button class="" variant="brand" disabled={isDisabedDuplicate}
+                                          label="Check Duplicate" onclick={handleduplicate}>
+                                    </lightning-button>
+                                    <lightning-button class="selfclick" style="margin-left: 1rem;" variant="brand"
+                                          disabled={isDisabed} type="submit" label="Save" onclick={handleclicksubmit}>
+                                    </lightning-button>
+                                    <lightning-button class="" style="margin-left: 1rem;" variant="brand" label="Cancel"
+                                          type="cancel" onclick={handleCancel}>
+                                    </lightning-button>
+                              </div>
+                        </template>
+
+
+                  </lightning-accordion>
+            </lightning-record-edit-form>
+            <template if:true={isShowModal}>
+
+                  <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                        aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                        <div class="slds-modal__container">
+                              <header class="slds-modal__header">
+                                    <button
+                                          class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                                          title="Close" onclick={hideModalBox}>
+                                          <lightning-icon icon-name="utility:close" alternative-text="close"
+                                                variant="inverse" size="small"></lightning-icon>
+                                          <span class="slds-assistive-text">Close</span>
+                                    </button>
+                                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">This
+                                          record already exists. Do you still want to create a duplicate "New Client"
+                                          record? </h2>
+                              </header>
+                              <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                                    <div style="width:fit-content; margin:0px auto;">
+                                          <p> <button class="slds-button slds-button_neutral" onclick={handleyes}>Yes &
+                                                      Submit</button>
+                                                <button class="slds-button slds-button_neutral" onclick={handleno}>No &
+                                                      Close</button>
+                                          </p>
+                                    </div>
+                              </div>
+                              <footer class="slds-modal__footer">
+                                    <button class="slds-button slds-button_neutral"
+                                          onclick={hideModalBox}>Cancel</button>
+                              </footer>
+                        </div>
+                  </section>
+                  <div class="slds-backdrop slds-backdrop_open"></div>
+            </template>
+      </lightning-card>
+</template>

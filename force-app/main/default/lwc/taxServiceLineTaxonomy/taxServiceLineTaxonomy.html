@@ -1,0 +1,243 @@
+<template>
+<template if:true={isShowTaxServiceLineTaxonomy}>
+<lightning-card>
+<section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+    <div class="slds-modal__container">
+        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+        <!-- Taxonomy Template Content -->
+                <div class="demo-only slds-align_absolute-center" style="padding:0.5rem;background:#16325c">
+                <div class="slds-text-color_inverse">TAX SERVICE LINE TAXONOMY</div>
+            </div>
+            <br/>
+            <lightning-card>
+                <article class="slds-card">
+                    <div class="slds-card__body">
+                    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_col-bordered slds-table_fixed-layout" role="grid" aria-label="Example table in a Card">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                            <th class="" scope="col">
+                                <div class="slds-truncate slds-cell-wrap" title="Sub-Service Line">
+                                    <div class="demo-only slds-align_absolute-center" style="padding:0.5rem;background:#ca9693">
+                                        <div class="slds-text-color_inverse">Sub-Service Line</div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate slds-cell-wrap" title="Definition For Sub-Sub Service Line">
+                                    <div class="demo-only slds-align_absolute-center" style="padding:0.5rem;background:#ca9693">
+                                        <div class="slds-text-color_inverse">Definition For Sub-Service Line</div>
+                                    </div>
+                                </div>
+                            </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <!-- First Row -->
+                            <tr class="slds-hint-parent">
+                            <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                                <div class="slds-truncate">
+                                    <b><h3>Direct tax compliance (domestic)</h3></b>
+                                </div> 
+                            </td>
+                            <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                                <div class="slds-align_absolute-center" title="Business Risk Services">
+                                <p class="slds-wrap">
+                                    Domestic tax compliance services performed for companies or businesses.
+                                </p>
+                            </div>
+                            </td> 
+                            </tr>
+                            <!-- Second Row -->
+                            <tr class="slds-hint-parent">
+                                <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                                    <div class="slds-truncate">
+                                        <b><h3>Direct tax compliance (international)</h3></b>
+                                    </div> 
+                                </td>
+                                <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                                    <div class="slds-align_absolute-center" title="Business Risk Services">
+                                    <p class="slds-wrap">
+                                        International tax compliance services performed for companies or businesses.
+                                    </p>
+                                </div>
+                                </td> 
+                                </tr>
+                                <!-- Third Row -->
+                                <tr class="slds-hint-parent">
+                                    <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                                        <div class="slds-truncate">
+                                            <b><h3>Direct tax advisory (domestic)</h3></b>
+                                        </div> 
+                                    </td>
+                                    <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                                        <div class="slds-align_absolute-center" title="Business Risk Services">
+                                        <p class="slds-wrap">
+                                            Tax advisory services for companies or businesses based within the member firm jurisdiction.
+                                        </p>
+                                    </div>
+                                    </td> 
+                                    </tr>
+                                    <!-- Fourth Row -->
+                                    <tr class="slds-hint-parent">
+                                        <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                                            <div class="slds-truncate">
+                                                <b><h3>Direct tax advisory (international)</h3></b>
+                                            </div> 
+                                        </td>
+                                        <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                                            <div class="slds-align_absolute-center" title="Business Risk Services">
+                                            <p class="slds-wrap">
+                                                Tax advisory services for companies or businesses based outside member firm jurisdiction or performed on behalf of another member firm.
+                                            </p>
+                                        </div>
+                                        </td> 
+                                        </tr>
+                                        <!-- Fifth Row -->
+                                        <tr class="slds-hint-parent">
+                                            <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                                                <div class="slds-truncate">
+                                                    <b><h3>Indirect tax compliance</h3></b>
+                                                </div> 
+                                            </td>
+                                            <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                                                <div class="slds-align_absolute-center" title="Business Risk Services">
+                                                <p class="slds-wrap">
+                                                    Compliance for transaction based taxes such as VAT, GST , Custom duties and State and Local Taxes (SALT).
+                                                </p>
+                                            </div>
+                                            </td> 
+                                            </tr>
+                                            <!-- Sixth Row -->
+                                            <tr class="slds-hint-parent">
+                                                <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                                                    <div class="slds-truncate">
+                                                        <b><h3>Indirect tax advisory</h3></b>
+                                                    </div> 
+                                                </td>
+                                                <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                                                    <div class="slds-align_absolute-center" title="Business Risk Services">
+                                                    <p class="slds-wrap">
+                                                        Advisory for transaction based taxes such as VAT, GST , Custom duties and State and Local Taxes (SALT).
+                                                    </p>
+                                                </div>
+                                                </td> 
+                                                </tr>
+                                                <!-- Seventh Row -->
+                                                <tr class="slds-hint-parent">
+                                                    <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                                                        <div class="slds-truncate">
+                                                            <b><h3>Transfer pricing services</h3></b>
+                                                        </div> 
+                                                    </td>
+                                                    <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                                                        <div class="slds-align_absolute-center" title="Business Risk Services">
+                                                        <p class="slds-wrap">
+                                                            Advising companies to ensure that their transactions with related parties are conducted on an arms length basis.
+                                                        </p>
+                                                    </div>
+                                                    </td> 
+                                                    </tr>
+                                                    <!-- Eigth Row -->
+                                                    <tr class="slds-hint-parent">
+                                                        <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                                                            <div class="slds-truncate">
+                                                                <b><h3>Global mobility services</h3></b>
+                                                            </div> 
+                                                        </td>
+                                                        <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                                                            <div class="slds-align_absolute-center" title="Business Risk Services">
+                                                            <p class="slds-wrap">
+                                                                Advising on Tax, social security and employment issues for an employer with an internationally mobile workforce or an internationally mobile individual.
+                                                            </p>
+                                                        </div>
+                                                        </td> 
+                                                        </tr>
+                                                        <!-- Ninth Row -->
+                                                        <tr class="slds-hint-parent">
+                                                            <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                                                                <div class="slds-truncate">
+                                                                    <b><h3>Private client wealth management services advisory</h3></b>
+                                                                </div> 
+                                                            </td>
+                                                            <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                                                                <div class="slds-align_absolute-center" title="Business Risk Services">
+                                                                <p class="slds-wrap">
+                                                                    Tax advisory services performed for individuals and trusts, to include discretionary fund management.
+                                                                </p>
+                                                            </div>
+                                                            </td> 
+                                                            </tr>
+                                                            <!-- Tenth Row -->
+                                                            <tr class="slds-hint-parent">
+                                                                <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                                                                    <div class="slds-truncate">
+                                                                        <b><h3>Private client wealth management services compliance</h3></b>
+                                                                    </div> 
+                                                                </td>
+                                                                <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                                                                    <div class="slds-align_absolute-center" title="Business Risk Services">
+                                                                    <p class="slds-wrap">
+                                                                        Tax compliance services performed for individuals and trusts.
+                                                                    </p>
+                                                                </div>
+                                                                </td> 
+                                                                </tr>
+                                                            <!-- Eleventh Row  -->
+                                                            <tr class="slds-hint-parent">
+                                                                <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                                                                    <div class="slds-truncate">
+                                                                        <b><h3>Other tax services</h3></b>
+                                                                    </div> 
+                                                                </td>
+                                                                <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                                                                    <div class="slds-align_absolute-center" title="Business Risk Services">
+                                                                    <p class="slds-wrap">
+                                                                        Anything which does not fall within the defined sub service lines or is unallocated.
+                                                                    </p>
+                                                                </div>
+                                                                </td> 
+                                                                </tr>
+                                                                <!-- Twelth Row -->
+                                                                <tr class="slds-hint-parent">
+                                                                    <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                                                                        <div class="slds-truncate">
+                                                                            <b><h3>MA tax services</h3></b>
+                                                                        </div> 
+                                                                    </td>
+                                                                    <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                                                                        <div class="slds-align_absolute-center" title="Business Risk Services">
+                                                                        <p class="slds-wrap">
+                                                                            Tax advisory services in relation to MA such as acqusition, disposal,refinancing, initital public offering, reconstruction.
+                                                                        </p>
+                                                                    </div>
+                                                                    </td> 
+                                                                    </tr>
+                                                                    <!-- Thirteenth Row -->
+                                                                    <tr class="slds-hint-parent">
+                                                                        <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                                                                            <div class="slds-truncate">
+                                                                                <b><h3>Tax technology services</h3></b>
+                                                                            </div> 
+                                                                        </td>
+                                                                        <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                                                                            <div class="slds-align_absolute-center" title="Business Risk Services">
+                                                                            <p class="slds-wrap">
+                                                                                Advising clients on tax technology and building tax technology solutions for clients.
+                                                                            </p>
+                                                                        </div>
+                                                                        </td> 
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </article>
+                                                    </lightning-card>
+                                                </div>
+<div class="slds-modal__footer">
+<button class="slds-button slds-button_neutral slds-align_absolute-center" aria-label="Cancel and close" onclick={closeTaxServiceLineTaxonomyTemplate}>Ok</button>
+</div>
+</div>
+</section>
+</lightning-card>            
+</template>
+</template>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Discount</field>
+        <field>LineItemCount</field>
+        <field>TotalPrice</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>CSL__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <approver>
+                <name>COCSL__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.ClientType__c</field>
+                <operation>equals</operation>
+                <value>Key Account - CX,Key Account - GX</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>If client is key Account then approval request will be sent to CSL/Co-CSL</label>
+        <name>If_client_is_key_Account_then_approval_request_will_be_sent_to_CSL_Co_CSL</name>
+    </approvalStep>
+    <description>If client is key Account then approval request will be sent to CSL/Co-CSL</description>
+    <emailTemplate>unfiled$public/Submit_For_Quote_Approval</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.ClientType__c</field>
+            <operation>equals</operation>
+            <value>Key Account - CX,Key Account - GX</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.CommercialStatus__c</field>
+            <operation>notEqual</operation>
+            <value>Quote Accepted</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Quote_Final_Rejection</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>QuoteFinalRejection</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>true</finalRejectionRecordLock>
+    <label>Quote Approval Process</label>
+    <processOrder>2</processOrder>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

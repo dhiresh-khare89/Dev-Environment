@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>EngagementTypePublic__c</name>
+    <picklistValues>
+        <masterLabel>Financial statement audit - Component &amp; Statutory Auditor</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial statement audit - Component Auditor</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial statement audit - Group Auditor: No, the report will not be filed with a national regulator or exchange outside of your member firm&apos;s home country.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial statement audit - Group Auditor: Yes, the report will be filed with a national regulator or exchange outside of your member firm&apos;s home country.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial statement audit - Statutory Auditor</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial statement review</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other audit services - Please provide below specific details on the audit services being performed:</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Recovery_and_Reorganisation__c</name>
+    <picklistValues>
+        <masterLabel>Recovery &amp; reorganization type - Debt advisory</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recovery &amp; reorganization type - Insolvency</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recovery &amp; reorganization type - Restructuring</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

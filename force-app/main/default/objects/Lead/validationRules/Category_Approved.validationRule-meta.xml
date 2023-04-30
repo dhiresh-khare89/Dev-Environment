@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category_Approved</fullName>
+    <active>true</active>
+    <description>IF Category  is Cold Then (status new) can not Change .</description>
+    <errorConditionFormula>AND( ISPICKVAL(Category__c, &apos;Cold&apos;), ISCHANGED(Status),
+NOT( ByPassValidation__c ))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>You can not Change Status</errorMessage>
+</ValidationRule>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_request__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for request</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Client Meeting</fullName>
+                <default>false</default>
+                <label>Client Meeting</label>
+            </value>
+            <value>
+                <fullName>Need to sent to client</fullName>
+                <default>false</default>
+                <label>Need to sent to client</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pitch Presentation</fullName>
+                <default>false</default>
+                <label>Pitch Presentation</label>
+            </value>
+            <value>
+                <fullName>Proposal</fullName>
+                <default>false</default>
+                <label>Proposal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

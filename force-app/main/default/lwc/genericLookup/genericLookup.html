@@ -1,0 +1,71 @@
+<template>
+  <div class="slds-form-element" style="padding-left: 13px;">
+    <label class="slds-form-element__label" for="combobox-id-4" id="combobox-label-id-12">{label}</label>
+    <div class="slds-form-element__control">
+      <div class="slds-combobox_container ">
+        <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+          <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+            style="padding-left: 2px; width: 103%;" role="none">
+
+            
+            <lightning-input class="slds-input slds-combobox__input slds-has-focus slds-combobox__input-value"
+            type="search" autocomplete="off" data-source="searchInputField" onclick={toggleResult} onchange={handleKeyChange}
+              is-loading={isSearchLoading} value={searchKey} variant="label-hidden"
+              placeholder={placeholderValue}></lightning-input>
+              
+
+            <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right">
+              <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+              </svg>
+            </span>
+          </div>
+
+          <!--Lookup Selected record pill container start-->
+          <!-- <div class="pillDiv slds-hide">
+            <span class="slds-icon_container slds-combobox__input-entity-icon">
+              <lightning-icon icon-name={iconName} size="x-small" alternative-text="icon"></lightning-icon>
+            </span>
+            <input type="text" id="combobox-id-1" value={selectedRecord.Name}
+              class="slds-input slds-combobox__input slds-combobox__input-value" readonly />
+
+            <button style="padding-left: 30px;">
+              <lightning-icon icon-name="utility:close" size="x-small" alternative-text="close icon"
+                onclick={handleRemove}></lightning-icon>
+            </button>
+          </div> -->
+
+        <!-- Lookup Data -->
+        <template if:true={showLookUpRecords}>
+        <div style="margin-top:0px" id="listbox-id-5"
+          class="slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid" role="listbox">
+          <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+            <template for:each={lstResult} for:item="obj">
+              <li key={obj.Id} role="presentation" class="slds-listbox__item">
+                <div data-recid={obj.Id} onclick={handelSelectedRecord}
+                  class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta"
+                  role="option">
+                  <span style="pointer-events: none;" class="slds-media__figure slds-listbox__option-icon">
+                    <span class="slds-icon_container">
+                      <lightning-icon icon-name={iconName} size="small" alternative-text="icon"></lightning-icon>
+                    </span>
+                  </span>
+                  <span style="pointer-events: none;" class="slds-media__body">
+                    <span class="slds-listbox__option-text slds-listbox__option-text_entity">{obj.Name}</span>
+                  </span>
+                </div>
+              </li>
+            </template>
+            <!--ERROR msg, if there is no records..-->
+            <template if:false={hasRecords}>
+              <li class="slds-listbox__item" style="text-align: center; font-weight: bold;">No Records Found....</li>
+            </template>
+          </ul>
+
+        </div>
+      </template>
+      </div>
+    </div>
+  </div>
+  </div>
+</template>

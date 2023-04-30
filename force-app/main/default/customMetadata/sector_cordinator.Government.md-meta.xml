@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Government</label>
+    <protected>true</protected>
+    <values>
+        <field>NSL__c</field>
+        <value xsi:type="xsd:string">mukul.rathi@walkerchandiok.in</value>
+    </values>
+    <values>
+        <field>OwnerId__c</field>
+        <value xsi:type="xsd:string">uttam.kumar@in.gt.com</value>
+    </values>
+    <values>
+        <field>Sector__c</field>
+        <value xsi:type="xsd:string">Government</value>
+    </values>
+    <values>
+        <field>Solution__c</field>
+        <value xsi:type="xsd:string">BeSpoke;Expertise;Agri competitiveness &amp; alternative markets;Skill PMU;Smart City / Water / Transport;Sports Advisory (PMUs, Events etc);MSME ecosystem development;Citizen Services - e-Distt, CM Dashboards, e-Pragati, etc.;Aviation and Defence;E-commerce market place;Municipalities / Local Government (WASH, Municipal Finance, Amrut);Advanced Analytics Design and Implementation</value>
+    </values>
+    <values>
+        <field>Sub_Sector__c</field>
+        <value xsi:type="xsd:string">Government</value>
+    </values>
+    <values>
+        <field>sector_cordinator_id__c</field>
+        <value xsi:type="xsd:string">uttam.kumar@in.gt.com</value>
+    </values>
+</CustomMetadata>

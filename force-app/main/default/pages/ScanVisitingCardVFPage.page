@@ -1,0 +1,24 @@
+<apex:page standardController="Lead" recordSetVar="leads" tabStyle="Lead"  >
+    <apex:includeLightning />
+    
+        
+    
+ <div id="LightningComponentid" rerender="false" onclick="return false;" />    
+    <script>
+    
+    var agent = navigator.platform;
+    console.log('platform : ', agent);
+    //alert('agent :'+agent);
+    
+    if (navigator.platform == 'Win32') {
+        sforce.one.showToast({
+            "title": 'Error',
+            "message": 'Test',
+            "type": "Error"
+        });
+        sforce.one.back();
+    }
+    
+    </script>
+        
+</apex:page>

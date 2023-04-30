@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market__c</fullName>
+    <externalId>false</externalId>
+    <label>Market</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cross Entity Billing Markets</fullName>
+                <default>false</default>
+                <label>Cross Entity Billing Markets</label>
+            </value>
+            <value>
+                <fullName>International Standards Solutions</fullName>
+                <default>false</default>
+                <label>International Standards Solutions</label>
+            </value>
+            <value>
+                <fullName>Privately Held Business Solutions</fullName>
+                <default>false</default>
+                <label>Privately Held Business Solutions</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

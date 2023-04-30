@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EngagementTypePublic__c</fullName>
+    <description>Engagement Type for Public Entity.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Engagement Type for Public Entity.</inlineHelpText>
+    <label>Engagement Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Financial statement audit - Group Auditor: Yes, the report will be filed with a national regulator or exchange outside of your member firm&apos;s home country.</fullName>
+                <default>false</default>
+                <label>Financial statement audit - Group Auditor: Yes, the report will be filed with a national regulator or exchange outside of your member firm&apos;s home country.</label>
+            </value>
+            <value>
+                <fullName>Financial statement audit - Group Auditor: No, the report will not be filed with a national regulator or exchange outside of your member firm&apos;s home country.</fullName>
+                <default>false</default>
+                <label>Financial statement audit - Group Auditor: No, the report will not be filed with a national regulator or exchange outside of your member firm&apos;s home country.</label>
+            </value>
+            <value>
+                <fullName>Financial statement audit - Component Auditor</fullName>
+                <default>false</default>
+                <label>Financial statement audit - Component Auditor</label>
+            </value>
+            <value>
+                <fullName>Financial statement audit - Statutory Auditor</fullName>
+                <default>false</default>
+                <label>Financial statement audit - Statutory Auditor</label>
+            </value>
+            <value>
+                <fullName>Financial statement audit - Component &amp; Statutory Auditor</fullName>
+                <default>false</default>
+                <label>Financial statement audit - Component &amp; Statutory Auditor</label>
+            </value>
+            <value>
+                <fullName>Financial statement review</fullName>
+                <default>false</default>
+                <label>Financial statement review</label>
+            </value>
+            <value>
+                <fullName>Other audit services - Please provide below specific details on the audit services being performed:</fullName>
+                <default>false</default>
+                <label>Other audit services - Please provide below specific details on the audit services being performed:</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

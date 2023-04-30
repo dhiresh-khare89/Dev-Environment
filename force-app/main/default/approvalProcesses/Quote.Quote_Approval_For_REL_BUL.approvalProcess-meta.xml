@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>RELBUL__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>else if Non Key Account and Recovery% &gt;= 75 then approval request will be sent to REL/BUL</description>
+        <label>if Non Key Account and Recovery% &gt;= 75</label>
+        <name>if_Non_Key_Account_and_Recovery_75</name>
+    </approvalStep>
+    <description>else if Non Key Account and Recovery% &gt;= 75 then approval request will be sent to REL/BUL</description>
+    <emailTemplate>unfiled$public/Submit_For_Quote_Approval</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Opportunity.ClientType__c</field>
+            <operation>equals</operation>
+            <value>Non Key Client</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.Recovery__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>75</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Final_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Final_Rejection</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>true</finalRejectionRecordLock>
+    <label>Quote Approval For REL.BUL</label>
+    <processOrder>3</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

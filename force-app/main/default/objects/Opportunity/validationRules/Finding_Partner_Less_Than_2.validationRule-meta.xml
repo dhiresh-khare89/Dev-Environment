@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Finding_Partner_Less_Than_2</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(CountTeam__c &lt;2,  NOT(ISPICKVAL( StageName , &apos;Identify/Create Enquiry&apos;)),NOT( ByPassValidation__c ))</errorConditionFormula>
+    <errorMessage>Please add minimum 2 finding Partners to proceed in Enquiry Process</errorMessage>
+</ValidationRule>

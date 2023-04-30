@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scan</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Scan</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>if (navigator.userAgent.indexOf(&apos;Mac OS X&apos;) != -1) {
+  alert(&quot;Mac&quot;); // You can do whatever here
+} else {
+  alert(&quot;Windows&quot;); // You can do whatever here
+}</url>
+</WebLink>

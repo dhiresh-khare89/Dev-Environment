@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PM_ACCT_INVOICE_HD__c</fullName>
+    <externalDeveloperName>PROJECT_ID</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>PM_ACCT_INVOICE_HD</label>
+    <length>255</length>
+    <referenceTo>PM_ACCT_INVOICE_HD__x</referenceTo>
+    <relationshipLabel>ACNT_RECP_DT</relationshipLabel>
+    <relationshipName>ACNT_RECP_DT</relationshipName>
+    <type>ExternalLookup</type>
+</CustomField>

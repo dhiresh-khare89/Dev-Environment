@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_on_Enquiry_Won_and_Lost</fullName>
+    <active>true</active>
+    <description>Validation at Stage Closed Won/Closed Lost, User will not able to go back to previous stage once the Enquiry is Close Won/Close Lost. Enquiry will mark as read only.</description>
+    <errorConditionFormula>Case( StageName,
+&quot;New&quot; , 1 ,
+
+&quot;Internal / External Discussions&quot;, 2,
+
+&quot;Client Take-On PreWork&quot;, 3,
+
+&quot;Client Take On&quot;, 4,
+
+&quot;Accept Client&quot; , 5,
+&quot;Not Accepted Client&quot; , 6 ,
+&quot;Identify/Create Enquiry&quot; , 7 ,
+&quot;Determine Problem &amp; Impact&quot; , 8,    
+&quot;Validate Benefits &amp; Value&quot; ,9,
+&quot;Confirm Value With Client&quot; ,10,
+&quot;Negotiation &amp; Mutual Plan&quot; ,11,
+&quot;Nurture &amp; Finalizing Closure&quot; ,12,
+
+
+&quot;Closed Won&quot;, 14,
+
+&quot;Closed Lost&quot;, 14, 0) &lt; Case(PRIORVALUE(StageName),
+
+
+&quot;Closed Won&quot;, 14,
+
+&quot;Closed Lost&quot;, 14, 0)</errorConditionFormula>
+    <errorMessage>You can&apos;t go Back or Edit this enquiry is already closed Won/Closed Lost</errorMessage>
+</ValidationRule>

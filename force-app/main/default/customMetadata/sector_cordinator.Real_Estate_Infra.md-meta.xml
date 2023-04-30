@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Real Estate &amp; Infra</label>
+    <protected>true</protected>
+    <values>
+        <field>NSL__c</field>
+        <value xsi:type="xsd:string">yukti.ajmera@walkerchandiok.in</value>
+    </values>
+    <values>
+        <field>OwnerId__c</field>
+        <value xsi:type="xsd:string">aashman.bhatia@in.gt.com</value>
+    </values>
+    <values>
+        <field>Sector__c</field>
+        <value xsi:type="xsd:string">Real Estate &amp; Infra</value>
+    </values>
+    <values>
+        <field>Solution__c</field>
+        <value xsi:type="xsd:string">BeSpoke;Expertise;Statutory &amp; Internal audits;Risk based special reviews;Tax advisory (Incentives);Infra consulting roads, Transportation, water &amp; so on.;ESG advisory &amp; reporting</value>
+    </values>
+    <values>
+        <field>Sub_Sector__c</field>
+        <value xsi:type="xsd:string">Real Estate &amp; Infra;Cleantech;Energy &amp; natural resources</value>
+    </values>
+    <values>
+        <field>sector_cordinator_id__c</field>
+        <value xsi:type="xsd:string">aashman.bhatia@in.gt.com</value>
+    </values>
+</CustomMetadata>

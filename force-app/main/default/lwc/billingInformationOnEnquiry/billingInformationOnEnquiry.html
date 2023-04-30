@@ -1,0 +1,11 @@
+<template>
+				<p>Invoice List</p>			
+        <div class="slds-box">  
+                    <lightning-datatable  
+                        data={invoiceList} columns={columns} key-field="Id"
+                        hide-checkbox-column="true"  
+                show-row-number-column="true"  
+                onrowaction={callRowAction}> >  
+                    </lightning-datatable>
+        </div>
+</template>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_mail_to_enquiry_owner</name>
+        <label>Send mail to enquiry owner</label>
+        <locationX>528</locationX>
+        <locationY>636</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>Looping_over_enquiry_data.Owner.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>You are on the Negotiation &amp; Mutual Plan stage for past 15 days</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>Check_Last_date_of_stage_change</name>
+        <label>Check Last date of stage change</label>
+        <locationX>528</locationX>
+        <locationY>516</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_stage_is_same_since_7_days</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Looping_over_enquiry_data.LastStageChangeDate</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>Daystocheck7</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Looping_over_enquiry_data.LastStageChangeDate</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>Daystocheck14</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_task</targetReference>
+            </connector>
+            <label>If stage is same since 7 days</label>
+        </rules>
+        <rules>
+            <name>If_stage_is_same_since_14_days</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Looping_over_enquiry_data.LastStageChangeDate</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>Daystocheck14</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_mail_to_enquiry_owner</targetReference>
+            </connector>
+            <label>If stage is same since 14 days</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Daystocheck14</name>
+        <dataType>Date</dataType>
+        <expression>Today() - 14</expression>
+    </formulas>
+    <formulas>
+        <name>Daystocheck7</name>
+        <dataType>Date</dataType>
+        <expression>today()-7</expression>
+    </formulas>
+    <formulas>
+        <name>Taskduedate</name>
+        <dataType>Date</dataType>
+        <expression>today() + 7</expression>
+    </formulas>
+    <interviewLabel>Check if enquiry stage is still same {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Check if enquiry stage is still same</label>
+    <loops>
+        <name>Looping_over_enquiry_data</name>
+        <label>Looping over enquiry data</label>
+        <locationX>176</locationX>
+        <locationY>396</locationY>
+        <collectionReference>Get_Enquiry_records</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_Last_date_of_stage_change</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_task</name>
+        <label>Create task</label>
+        <locationX>264</locationX>
+        <locationY>636</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>Taskduedate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Your enquiry is still on same stage, please create pulse report.</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>Looping_over_enquiry_data.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Enquiry_records</name>
+        <label>Get Enquiry records</label>
+        <locationX>176</locationX>
+        <locationY>276</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Looping_over_enquiry_data</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Negotiation &amp; Mutual Plan</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Enquiry_records</targetReference>
+        </connector>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2022-12-26</startDate>
+            <startTime>03:45:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>EmailBody</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 14px;&quot;&gt;We noticed that you are on the Negotiation &amp;amp; Mutual Plan stage for past 15 days. Please reach out to your peers and experts for assistance, if required. Proceed with negotiations to arrive at a mutually beneficial of Commercial and Proposal. Post meeting please capture the meeting minutes of your meeting with Client.&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>Dayss</name>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

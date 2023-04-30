@@ -1,0 +1,20 @@
+<apex:page standardController="Lead" recordSetVar="Lead" extensions="ListViewButtonDemo">
+   <html>
+           <apex:includeLightning />
+
+    <div id="lightningvf" />
+
+   <script>
+         $Lightning.use(
+             "c:newClientApp", // Name of Aura Dependency app where c is namespace.
+             function() { // Callback function
+                 $Lightning.createComponent(
+                     "c:clientNew", // Name of Lightning Component where c is namespace.
+                     {}, // attribute parameters
+                     "lightningvf" // Id of the element where Lightning Component will be rendered.
+                 );
+             }
+         );
+       </script>   
+            </html>
+</apex:page>

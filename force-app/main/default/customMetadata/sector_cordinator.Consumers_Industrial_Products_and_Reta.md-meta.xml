@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Consumers &amp; Industrial Products and Reta</label>
+    <protected>true</protected>
+    <values>
+        <field>NSL__c</field>
+        <value xsi:type="xsd:string">0056D000006BiCcQAK</value>
+    </values>
+    <values>
+        <field>OwnerId__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Sector__c</field>
+        <value xsi:type="xsd:string">Consumers &amp; Industrial Products and Retail</value>
+    </values>
+    <values>
+        <field>Solution__c</field>
+        <value xsi:type="xsd:string">BeSpoke;Expertise;Cyber &amp; Digital transformation;Sales &amp; Cx optimization;Govt. Incentives;Payment Solutions for consumer sector;ONDC Setup;Organisation alignment</value>
+    </values>
+    <values>
+        <field>Sub_Sector__c</field>
+        <value xsi:type="xsd:string">Consumer, Retail and E-commerce;Food &amp; Agri;Industrial products</value>
+    </values>
+    <values>
+        <field>sector_cordinator_id__c</field>
+        <value xsi:type="xsd:string">0056D000005pFsEQAU</value>
+    </values>
+</CustomMetadata>

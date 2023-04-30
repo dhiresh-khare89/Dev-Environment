@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Converted_to_new_Client_ProspectName</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+ISPICKVAL(Status , &quot;Converted to New Client&quot;),
+ISCHANGED(Status))
+&amp;&amp;
+OR
+(ISBLANK(SuppliedName),
+NOT(REGEX(SuppliedName,&quot;^[a-zA-Z ]*$&quot;)))</errorConditionFormula>
+    <errorDisplayField>SuppliedName</errorDisplayField>
+    <errorMessage>Please enter a valid name</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<template>
+
+	<lightning-card>
+		<template if:true={enquiryData}>
+			<lightning-datatable key-field="Id" data={enquiryData} columns={columns} hide-checkbox-column="true"
+				show-row-number-column="true" enable-infinite-loading="true">
+			</lightning-datatable>
+		</template>
+	</lightning-card>
+
+</template>

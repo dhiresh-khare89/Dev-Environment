@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Users_Contains_T1</fullName>
+    <active>false</active>
+    <errorConditionFormula>Owner:User.Designation__c &lt;&gt; &apos;T1&apos;</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>User must have T1 Designation</errorMessage>
+</ValidationRule>

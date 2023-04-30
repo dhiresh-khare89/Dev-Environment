@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recovery_and_Reorganisation__c</fullName>
+    <externalId>false</externalId>
+    <label>Recovery and Reorganisation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Recovery &amp; reorganization type - Restructuring</fullName>
+                <default>false</default>
+                <label>Recovery &amp; reorganization type - Restructuring</label>
+            </value>
+            <value>
+                <fullName>Recovery &amp; reorganization type - Insolvency</fullName>
+                <default>false</default>
+                <label>Recovery &amp; reorganization type - Insolvency</label>
+            </value>
+            <value>
+                <fullName>Recovery &amp; reorganization type - Debt advisory</fullName>
+                <default>false</default>
+                <label>Recovery &amp; reorganization type - Debt advisory</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

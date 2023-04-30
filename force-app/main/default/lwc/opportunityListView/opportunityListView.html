@@ -1,0 +1,47 @@
+<template>
+
+    <lightning-card>
+
+        <table class="slds-table slds-table_bordered" aria-label="Custom Table For Opportunities">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Created Date">Created Date</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Opportunity Name">Enquiry Name</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Service">Service/Product</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Stage">Stage</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <template if:true={oppData}>
+                    <template for:each={oppData} for:item="item">
+                        <tr class="slds-hint-parent" key={item.id}>
+                            <td>
+                                {createdDate}
+                            </td>
+                            <td>
+                                {item.Opportunity.Name}
+                            </td>
+                            <td>
+                                {item.Name}
+                            </td>
+                            <td>
+                                {item.Opportunity.StageName}
+                            </td>
+
+                        </tr>
+                    </template>
+                </template>
+            </tbody>
+        </table>
+
+    </lightning-card>
+
+</template>

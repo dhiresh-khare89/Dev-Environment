@@ -1,0 +1,11 @@
+<aura:component controller="SubmitForApprovalButtonController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader" access="global" >
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="myCCval" type="String" />
+    <div class="slds-text-heading_medium slds-text-align_center">Submit for Client Council Approval</div>
+    <div class="textarea">
+        <lightning:textarea name="input3" value="{!v.myCCval}" required="true" label="Comments" placeholder="type here..."/>
+    </div><br></br>
+    <div class="slds-float_right" style="margin-top: 5px;">
+        <lightning:button variant="brand" label="Submit" title="Brand action" onclick="{! c.submitCCcomments}"/>
+    </div>
+</aura:component>

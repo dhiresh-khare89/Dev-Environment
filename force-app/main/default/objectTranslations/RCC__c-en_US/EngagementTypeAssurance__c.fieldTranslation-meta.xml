@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>EngagementTypeAssurance__c</name>
+    <picklistValues>
+        <masterLabel>Agreed upon procedures</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial statement compilation</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other assurance - Please provide below specific details on the assurance services being performed</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reporting on controls at a service organization</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

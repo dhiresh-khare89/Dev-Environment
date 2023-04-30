@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSL_Discussion_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>NSL Discussion Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending Discussion</fullName>
+                <default>false</default>
+                <label>Pending Discussion</label>
+            </value>
+            <value>
+                <fullName>Post NSL Discussion</fullName>
+                <default>false</default>
+                <label>Post NSL Discussion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

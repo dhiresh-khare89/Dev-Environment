@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_entity__c</fullName>
+    <externalId>false</externalId>
+    <label>Legal entity</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Grant Thornton Advisory Private Limited</fullName>
+                <default>false</default>
+                <label>Grant Thornton Advisory Private Limited</label>
+            </value>
+            <value>
+                <fullName>Grant Thornton Bharat LLP</fullName>
+                <default>false</default>
+                <label>Grant Thornton Bharat LLP</label>
+            </value>
+            <value>
+                <fullName>GT Restructuring Services LLP</fullName>
+                <default>false</default>
+                <label>GT Restructuring Services LLP</label>
+            </value>
+            <value>
+                <fullName>GT Valuation Advisors LLP</fullName>
+                <default>false</default>
+                <label>GT Valuation Advisors LLP</label>
+            </value>
+            <value>
+                <fullName>Walker Chandiok &amp; Associates</fullName>
+                <default>false</default>
+                <label>Walker Chandiok &amp; Associates</label>
+            </value>
+            <value>
+                <fullName>Walker Chandiok &amp; Co LLP</fullName>
+                <default>false</default>
+                <label>Walker Chandiok &amp; Co LLP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

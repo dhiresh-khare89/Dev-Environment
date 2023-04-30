@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor_Relationship_To_Be_Reported__c</fullName>
+    <description>What type of vendor relationship, do you want to reported.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What type of vendor relationship, do you want to reported.</inlineHelpText>
+    <label>Vendor Relationship To Be Reported</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Report only significant vendor relationships</fullName>
+                <default>false</default>
+                <label>Report only significant vendor relationships</label>
+            </value>
+            <value>
+                <fullName>Report all vendor relationships</fullName>
+                <default>false</default>
+                <label>Report all vendor relationships</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

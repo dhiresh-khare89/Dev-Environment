@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Rule_If_CC_App_Rejected</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( OR(ISPICKVAL( CCApprovalStatus__c , &apos;&apos;),ISPICKVAL( CCApprovalStatus__c , &apos;Rejected&apos;),
+ISPICKVAL( CCApprovalStatus__c , &apos;Pending&apos;)) ,
+ISCHANGED(Status),
+ISPICKVAL(Status, &apos;Accept Client&apos;)
+ 
+)</errorConditionFormula>
+    <errorMessage>You can&apos;t accept this Client, since its not approved by Client Council.</errorMessage>
+</ValidationRule>

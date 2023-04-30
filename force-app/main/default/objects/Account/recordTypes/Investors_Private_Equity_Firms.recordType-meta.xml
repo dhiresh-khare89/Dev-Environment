@@ -1,0 +1,1694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Investors_Private_Equity_Firms</fullName>
+    <active>true</active>
+    <label>Investors / Private Equity Firms</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chat Bot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cross Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visiting Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AccountType__c</picklist>
+        <values>
+            <fullName>Key Account - CX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key Account - GX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Key Client</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Account_Plan_Status__c</picklist>
+        <values>
+            <fullName>Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>NSL Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NSL Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending NSL Approval</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ClientServiceLeader__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ClientStatus__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CollectionInCharge__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Corridor__c</picklist>
+        <values>
+            <fullName>Israel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United State</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EngagementTeamApprovalStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Expertise__c</picklist>
+        <values>
+            <fullName>Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CFO Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Intelligence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cyber %26 IT Risk %28Cyber%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGTL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forensic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GT Global Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Growth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Capital Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IKCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Advisory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Client Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Sector Consulting %28PSC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recovery %26 Reorganisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Advisory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transformation Solutions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Aerospace %26 defense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto %26 Auto Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleantech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy %26 natural resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Agri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infrastructure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Law Firms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owners %26 Private Clients</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceuticals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Equity %26 Venture Capital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry__c</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource__c</picklist>
+        <values>
+            <fullName>Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chat Bot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cross Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LegalEntityType__c</picklist>
+        <values>
+            <fullName>Public Listed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Not Listed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pvt%2E Listed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pvt%2E Not Listed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ListedUnlisted__c</picklist>
+        <values>
+            <fullName>Listed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unlisted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Market__c</picklist>
+        <values>
+            <fullName>Cross Entity Billing Markets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Standards Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Privately Held Business Solutions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Proposed_Account_Owner_Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RCCCurrentStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NotInitiated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outstanding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RelationshipOffice__c</picklist>
+        <values>
+            <fullName>GT_Bengaluru</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GT_Bhopal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GT_Chennai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GT_Delhi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GT_Hyderabad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GT_Lucknow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GT_Mumbai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GT_Noida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GT_One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GT_Pune</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sector__c</picklist>
+        <values>
+            <fullName>Auto %26 Auto Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIP %26 Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Law Firms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owners %26 Private Clients</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PE%2FVC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharma %26 Healthcare Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate %26 Infra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TMT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Segment__c</picklist>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Large Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Largest Listed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Listed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PE Fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PE Investee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S M Private</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status_DS_Team_Remark_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SubIndustry__c</picklist>
+        <values>
+            <fullName>Advertising %26 marketing agencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advertising services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerospace %26 defense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultural products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air freight %26 logistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Airlines and miscellaneous non-rail transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Airport services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amusement parks%2C theme parks %26 race tracks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel%2C accessories %26 luxury goods manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Architectural%2C engineering and technical services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asset Reconstruction Companies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asset managers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automobile manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automobile parts %26 equipment manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B2B publishing%2C events and conferences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beverage distributors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beverages producers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biofuels %28cleantech%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brokerage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital markets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Casinos and gaming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalogue retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coal %26 consumable fuels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial banks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial printing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer %26 electronics retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction %26 engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction %26 farm machinery %26 heavy trucks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction%2Fhomebuilding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer electronics manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer publishing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Containers %26 packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Convenience stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>County%2C regional and municipal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit unions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cruise lines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cultural organisations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data processing %26 outsourced services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diversified financial services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diversified real estate activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diversified support services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diversified telecommunication services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donor or international development organisations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electric utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic manufacturing services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy efficiency %28cleantech%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy infrastructure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment%2C other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental %26 facilities services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extraction equipment and services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Technology Companies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fitness facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 staples retailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food distributors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Footwear manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>For Profit Colleges and Universities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foundations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fund administrators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Further Education %28continuing education%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GT member firms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General merchandise stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Private equity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golf courses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government sponsored entities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health care services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health care technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare equipment %26 supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare providers %26 services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hedge funds %26 special purpose vehicles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Highways %26 railtracks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home furnishing retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home furnishings manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home improvement retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitals%2C health systems%2C clinics and specialty provider services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotels and motels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Household appliance manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Household products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housewares and specialties manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing organisations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hydro %28cleantech%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT consulting %26 other services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Independent power producers and energy traders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual or family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial conglomerates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance brokers and intermediaries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International NGOs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet retail and Ecommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet software %26 services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investment banking%09Investment banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Law firms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal and accounting services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leisure products manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life and health insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life sciences tools %26 services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long term care%2C senior living organizations%2C continuing care retirement communities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed health care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management and related consulting services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine ports %26 services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Membership organisations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metals and Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid-market private equity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining explorers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining producers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motorcycle manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Museums</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Music</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mutual funds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National or federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New materials %28cleantech%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Banking Financial Institutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-life insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nuclear %28cleantech%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office services %26 supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 gas drilling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 gas services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other financial institutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other not for profit organisations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaged foods %26 meats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paper %26 forest products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceuticals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photographic products manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Colleges and Universities %28not-for-profit%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional and trade associations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional sports teams</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public and private primary and secondary schools including religious schools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public colleges and universities %28government%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quasi-Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REITs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real estate development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real estate operating companies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real estate services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rehabilitation centers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religious organisations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social services organisations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar %28cleantech%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialised consumer services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialised finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speciality stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports arenas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State and provincial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supranational governmental organisations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV%2Ffilm production %26 distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology distributors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Textiles manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thrifts %26 mortgage finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tour operators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trading companies and distributors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel agencies %26 tour operators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trucking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trust</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tyres %26 rubber manufacturers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle rental and taxi companies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venture Capital %26 Venture Capital Trusts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste water treatment or purification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wave and tidal %28cleantech%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wind %28cleantech%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wireless telecommunication services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Market__c</picklist>
+        <values>
+            <fullName>CROSS BORDER TRANSACTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOMESTIC CAPITAL MARKET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENTERPRENEURIAL SERVICES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GLOBAL CAPITAL MARKETS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDIA INBOUND INVESTMENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTERNATIONAL BUSINESS EXPANSION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Defined</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Sector__c</picklist>
+        <values>
+            <fullName>Aerospace %26 defense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto %26 Auto Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleantech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer%2C Retail and E-commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy %26 natural resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Agri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media %26 telecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owners %26 Private Clients</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PE %2F VC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceuticals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate %26 Infra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Total_Employees__c</picklist>
+        <values>
+            <fullName>0-10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>101-500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11-50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51-100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Above 500</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Press</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

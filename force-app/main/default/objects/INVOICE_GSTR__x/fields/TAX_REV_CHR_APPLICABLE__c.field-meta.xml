@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TAX_REV_CHR_APPLICABLE__c</fullName>
+    <description>TAX_REV_CHR_APPLICABLE</description>
+    <externalDeveloperName>TAX_REV_CHR_APPLICABLE</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>TAX_REV_CHR_APPLICABLE</label>
+    <length>1</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

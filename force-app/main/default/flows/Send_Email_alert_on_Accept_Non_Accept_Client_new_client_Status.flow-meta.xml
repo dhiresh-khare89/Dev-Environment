@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email_on_Not_Accept_Client</name>
+        <label>Send Email on Not Accept Client</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBodyForNotAcceptClient</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.Owner:User.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>C&amp;M Rejects the client</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_to_New_Client_Owner_on_Accept_client</name>
+        <label>Send Email to New Client Owner on Accept client</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBodyForAcceptClient</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.Owner:User.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>C&amp;M accepts the client</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Check_new_client_status</name>
+        <label>Check new client status</label>
+        <locationX>314</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Status_is_Accept_Client</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Accept Client</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_to_New_Client_Owner_on_Accept_client</targetReference>
+            </connector>
+            <label>Status is Accept Client</label>
+        </rules>
+        <rules>
+            <name>Status_is_Not_Accepted_Client</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NotAccept</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_on_Not_Accept_Client</targetReference>
+            </connector>
+            <label>Status is Not Accepted Client</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>DetailPagelink</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_550}, FIND(&apos;/services&apos;,{!$Api.Partner_Server_URL_550})) &amp; {!$Record.Id}</expression>
+    </formulas>
+    <interviewLabel>Send Email alert on Accept/Non-Accept Client new client Status {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Send Email alert on Accept/Non-Accept Client new client Status</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_new_client_status</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Accept Client</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>NotAccept</stringValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>EmailBodyForAcceptClient</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;font-size:10px&quot;&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;Dear {!$Record.Owner:User.FirstName} {!$Record.Owner:User.LastName},&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-size:10px&quot;&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;Your New Client {!$Record.NewClientNo__c} - {!$Record.Company} is accepted by the Client Council Team. Please find the details below:&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-size:10px&quot;&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;Prospect Name:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {!$Record.FirstName} {!$Record.LastName}&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-size:10px&quot;&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;Propsect Email:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;{!$Record.Email}&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-size:10px&quot;&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;Sector:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;{!$Record.Sector__c}&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-size:10px&quot;&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;Comments:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;{!$Record.CCApprovalRejectionRecommendation__c}&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-size:10px&quot;&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;To access the record on LinKreta, please click on the link: {!DetailPagelink}&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-size:10px&quot;&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;Note:- This is a system generated email. Please do not reply to this mail.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailBodyForNotAcceptClient</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:10px&quot;&gt;Dear {!$Record.Owner:User.FirstName} {!$Record.Owner:User.LastName},&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:10px&quot;&gt;Your New Client {!$Record.NewClientNo__c} - {!$Record.Company} has not been accepted by the Client Council Team. Please find the details below:&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:10px&quot;&gt;Prospect Name: &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {!$Record.FirstName} {!$Record.LastName}&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:10px&quot;&gt;Propsect Email: &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;{!$Record.Email}&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:10px&quot;&gt;Sector: &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;{!$Record.Sector__c}&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:10px&quot;&gt;Rejection Comments: &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;{!$Record.CCApprovalRejectionRecommendation__c}&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:10px&quot;&gt;To access the record on LinKreta, please click on the link: {!DetailPagelink}&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-family:Arial,Helvetica,sans-serif&quot;&gt;&lt;span style=&quot;font-size:10px&quot;&gt;Note:- This is a system generated email. Please do not reply to this mail.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

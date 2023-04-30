@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Others</label>
+    <protected>true</protected>
+    <values>
+        <field>NSL__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>OwnerId__c</field>
+        <value xsi:type="xsd:string">00G6D000004aft6UAA</value>
+    </values>
+    <values>
+        <field>Sector__c</field>
+        <value xsi:type="xsd:string">Others</value>
+    </values>
+    <values>
+        <field>Solution__c</field>
+        <value xsi:type="xsd:string">BeSpoke;Expertise</value>
+    </values>
+    <values>
+        <field>Sub_Sector__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>sector_cordinator_id__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

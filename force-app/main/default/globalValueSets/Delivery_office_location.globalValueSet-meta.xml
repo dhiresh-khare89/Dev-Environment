@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Ahmadabad</fullName>
+        <default>false</default>
+        <label>Ahmadabad</label>
+    </customValue>
+    <customValue>
+        <fullName>Bangalore</fullName>
+        <default>false</default>
+        <label>Bangalore</label>
+    </customValue>
+    <customValue>
+        <fullName>Bangalore GTGD</fullName>
+        <default>false</default>
+        <label>Bangalore GTGD</label>
+    </customValue>
+    <customValue>
+        <fullName>Chandigarh</fullName>
+        <default>false</default>
+        <label>Chandigarh</label>
+    </customValue>
+    <customValue>
+        <fullName>Chennai</fullName>
+        <default>false</default>
+        <label>Chennai</label>
+    </customValue>
+    <customValue>
+        <fullName>Dehradun</fullName>
+        <default>false</default>
+        <label>Dehradun</label>
+    </customValue>
+    <customValue>
+        <fullName>Delhi</fullName>
+        <default>false</default>
+        <label>Delhi</label>
+    </customValue>
+    <customValue>
+        <fullName>Gandhi Nagar Gift City</fullName>
+        <default>false</default>
+        <label>Gandhi Nagar Gift City</label>
+    </customValue>
+    <customValue>
+        <fullName>GT One</fullName>
+        <default>false</default>
+        <label>GT One</label>
+    </customValue>
+    <customValue>
+        <fullName>Gurgaon</fullName>
+        <default>false</default>
+        <label>Gurgaon</label>
+    </customValue>
+    <customValue>
+        <fullName>Hazaribagh</fullName>
+        <default>false</default>
+        <label>Hazaribagh</label>
+    </customValue>
+    <customValue>
+        <fullName>Hyderabad</fullName>
+        <default>false</default>
+        <label>Hyderabad</label>
+    </customValue>
+    <customValue>
+        <fullName>Kochi</fullName>
+        <default>false</default>
+        <label>Kochi</label>
+    </customValue>
+    <customValue>
+        <fullName>Kolkatta</fullName>
+        <default>false</default>
+        <label>Kolkatta</label>
+    </customValue>
+    <customValue>
+        <fullName>Lucknow</fullName>
+        <default>false</default>
+        <label>Lucknow</label>
+    </customValue>
+    <customValue>
+        <fullName>Mumbai Andheri</fullName>
+        <default>false</default>
+        <label>Mumbai Andheri</label>
+    </customValue>
+    <customValue>
+        <fullName>Mumbai Parel</fullName>
+        <default>false</default>
+        <label>Mumbai Parel</label>
+    </customValue>
+    <customValue>
+        <fullName>Noida</fullName>
+        <default>false</default>
+        <label>Noida</label>
+    </customValue>
+    <customValue>
+        <fullName>Pune</fullName>
+        <default>false</default>
+        <label>Pune</label>
+    </customValue>
+    <masterLabel>Delivery office location</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

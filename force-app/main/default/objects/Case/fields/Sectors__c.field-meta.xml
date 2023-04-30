@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sectors__c</fullName>
+    <externalId>false</externalId>
+    <label>Sector</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Auto &amp; Auto Components</fullName>
+                <default>false</default>
+                <label>Auto &amp; Auto Components</label>
+            </value>
+            <value>
+                <fullName>CIP &amp; Retail</fullName>
+                <default>false</default>
+                <label>CIP &amp; Retail</label>
+            </value>
+            <value>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+                <label>Financial Services</label>
+            </value>
+            <value>
+                <fullName>Global Delivery</fullName>
+                <default>false</default>
+                <label>Global Delivery</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Law Firms</fullName>
+                <default>false</default>
+                <label>Law Firms</label>
+            </value>
+            <value>
+                <fullName>Owners &amp; Private Clients</fullName>
+                <default>false</default>
+                <label>Owners &amp; Private Clients</label>
+            </value>
+            <value>
+                <fullName>PE/VC</fullName>
+                <default>false</default>
+                <label>PE/VC</label>
+            </value>
+            <value>
+                <fullName>Pharma &amp; Healthcare Services</fullName>
+                <default>false</default>
+                <label>Pharma &amp; Healthcare Services</label>
+            </value>
+            <value>
+                <fullName>Real Estate &amp; Infra</fullName>
+                <default>false</default>
+                <label>Real Estate &amp; Infra</label>
+            </value>
+            <value>
+                <fullName>TMT</fullName>
+                <default>false</default>
+                <label>TMT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

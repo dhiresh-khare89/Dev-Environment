@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ActivityGroup__c</fullName>
+    <externalId>false</externalId>
+    <label>Activity Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Application Development</fullName>
+                <default>false</default>
+                <label>Application Development</label>
+            </value>
+            <value>
+                <fullName>Asset Management</fullName>
+                <default>false</default>
+                <label>Asset Management</label>
+            </value>
+            <value>
+                <fullName>Budgeting &amp; Forecasting</fullName>
+                <default>false</default>
+                <label>Budgeting &amp; Forecasting</label>
+            </value>
+            <value>
+                <fullName>Compliance &amp; Policies</fullName>
+                <default>false</default>
+                <label>Compliance &amp; Policies</label>
+            </value>
+            <value>
+                <fullName>Conferences</fullName>
+                <default>false</default>
+                <label>Conferences</label>
+            </value>
+            <value>
+                <fullName>Councils</fullName>
+                <default>false</default>
+                <label>Councils</label>
+            </value>
+            <value>
+                <fullName>CRM transformation</fullName>
+                <default>false</default>
+                <label>CRM transformation</label>
+            </value>
+            <value>
+                <fullName>Culture change initiative (SD)</fullName>
+                <default>false</default>
+                <label>Culture change initiative (SD)</label>
+            </value>
+            <value>
+                <fullName>ERP/CRM</fullName>
+                <default>false</default>
+                <label>ERP/CRM</label>
+            </value>
+            <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Events</label>
+            </value>
+            <value>
+                <fullName>iCSAT Survey</fullName>
+                <default>false</default>
+                <label>iCSAT Survey</label>
+            </value>
+            <value>
+                <fullName>Idle Time</fullName>
+                <default>false</default>
+                <label>Idle Time</label>
+            </value>
+            <value>
+                <fullName>IT Management</fullName>
+                <default>false</default>
+                <label>IT Management</label>
+            </value>
+            <value>
+                <fullName>Meetings</fullName>
+                <default>false</default>
+                <label>Meetings</label>
+            </value>
+            <value>
+                <fullName>Networks</fullName>
+                <default>false</default>
+                <label>Networks</label>
+            </value>
+            <value>
+                <fullName>PACE</fullName>
+                <default>false</default>
+                <label>PACE</label>
+            </value>
+            <value>
+                <fullName>Part time/Flexi Work</fullName>
+                <default>false</default>
+                <label>Part time/Flexi Work</label>
+            </value>
+            <value>
+                <fullName>Recruitments</fullName>
+                <default>false</default>
+                <label>Recruitments</label>
+            </value>
+            <value>
+                <fullName>Procurement</fullName>
+                <default>false</default>
+                <label>Procurement</label>
+            </value>
+            <value>
+                <fullName>Research &amp; Deliverable</fullName>
+                <default>false</default>
+                <label>Research &amp; Deliverable</label>
+            </value>
+            <value>
+                <fullName>Staffing</fullName>
+                <default>false</default>
+                <label>Staffing</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Strategic NC Projects</fullName>
+                <default>false</default>
+                <label>Strategic NC Projects</label>
+            </value>
+            <value>
+                <fullName>Strategy &amp; Planning</fullName>
+                <default>false</default>
+                <label>Strategy &amp; Planning</label>
+            </value>
+            <value>
+                <fullName>Super Coach</fullName>
+                <default>false</default>
+                <label>Super Coach</label>
+            </value>
+            <value>
+                <fullName>System Admin</fullName>
+                <default>false</default>
+                <label>System Admin</label>
+            </value>
+            <value>
+                <fullName>Trainings</fullName>
+                <default>false</default>
+                <label>Trainings</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

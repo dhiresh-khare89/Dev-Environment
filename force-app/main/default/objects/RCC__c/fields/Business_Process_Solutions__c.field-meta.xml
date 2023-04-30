@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Process_Solutions__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Process Solutions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business Process Solutions - Business process outsourcing and shared service centre</fullName>
+                <default>false</default>
+                <label>Business Process Solutions - Business process outsourcing and shared service centre</label>
+            </value>
+            <value>
+                <fullName>Business Process Solutions - Back office outsourcing</fullName>
+                <default>false</default>
+                <label>Business Process Solutions - Back office outsourcing</label>
+            </value>
+            <value>
+                <fullName>Business Process Solutions - Global compliance and reporting solutions (GCRS)</fullName>
+                <default>false</default>
+                <label>Business Process Solutions - Global compliance and reporting solutions (GCRS)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Market__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Market</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Market__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Defined</fullName>
+                <default>false</default>
+                <label>Not Defined</label>
+            </value>
+            <value>
+                <fullName>GLOBAL CAPITAL MARKETS</fullName>
+                <default>false</default>
+                <label>GLOBAL CAPITAL MARKETS</label>
+            </value>
+            <value>
+                <fullName>INDIA INBOUND INVESTMENT</fullName>
+                <default>false</default>
+                <label>INDIA INBOUND INVESTMENT</label>
+            </value>
+            <value>
+                <fullName>CROSS BORDER TRANSACTIONS</fullName>
+                <default>false</default>
+                <label>CROSS BORDER TRANSACTIONS</label>
+            </value>
+            <value>
+                <fullName>DOMESTIC CAPITAL MARKET</fullName>
+                <default>false</default>
+                <label>DOMESTIC CAPITAL MARKET</label>
+            </value>
+            <value>
+                <fullName>INTERNATIONAL BUSINESS EXPANSION</fullName>
+                <default>false</default>
+                <label>INTERNATIONAL BUSINESS EXPANSION</label>
+            </value>
+            <value>
+                <fullName>ENTERPRENEURIAL SERVICES</fullName>
+                <default>false</default>
+                <label>ENTERPRENEURIAL SERVICES</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Cross Entity Billing Markets</controllingFieldValue>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <valueName>Not Defined</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International Standards Solutions</controllingFieldValue>
+            <valueName>GLOBAL CAPITAL MARKETS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International Standards Solutions</controllingFieldValue>
+            <valueName>INDIA INBOUND INVESTMENT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International Standards Solutions</controllingFieldValue>
+            <valueName>CROSS BORDER TRANSACTIONS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Privately Held Business Solutions</controllingFieldValue>
+            <valueName>DOMESTIC CAPITAL MARKET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Privately Held Business Solutions</controllingFieldValue>
+            <valueName>INTERNATIONAL BUSINESS EXPANSION</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Privately Held Business Solutions</controllingFieldValue>
+            <valueName>ENTERPRENEURIAL SERVICES</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

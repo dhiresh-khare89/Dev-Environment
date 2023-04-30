@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expertise_Formula_Field__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES ( Expertise__c , &quot;Assurance&quot; ), &quot;Assurance;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;CFO services&quot; ), &quot;CFO services;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Digital Transformation&quot; ), &quot;Digital Transformation;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Public Sector Advisory&quot; ), &quot;Public Sector Advisory;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Tax&quot; ), &quot;Tax;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Solutions&quot; ), &quot;Solutions;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Risk&quot; ), &quot;Risk;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Growth&quot; ), &quot;Growth;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Technology Advisory&quot; ), &quot;Technology Advisory;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Recovery &amp; Re-organization&quot; ), &quot;Recovery &amp; Re-organization;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Audit&quot; ), &quot;Audit;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Operations&quot; ), &quot;Operations;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;GT Global Delivery&quot; ), &quot;GT Global Delivery;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Public Sector Consulting (PSC)&quot; ), &quot;Public Sector Consulting (PSC);&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;ESG&quot; ), &quot;ESG;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Corporate Intelligence&quot; ), &quot;Corporate Intelligence;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Forensic&quot; ), &quot;Forensic;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Cyber &amp; IT Risk (Cyber)&quot; ), &quot;Cyber &amp; IT Risk (Cyber);&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Private Client Service&quot; ), &quot;Private Client Service;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Lead Advisory&quot; ), &quot;Lead Advisory;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;FS Consulting&quot; ), &quot;FS Consulting;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Transformation Solutions&quot; ), &quot;Transformation Solutions;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;IKCC&quot; ), &quot;IKCC;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;FS Risk&quot; ), &quot;FS Risk;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;DGTL&quot; ), &quot;DGTL;&quot;,null ) &amp;
+IF ( INCLUDES ( Expertise__c , &quot;Human Capital Consulting&quot; ), &quot;Human Capital Consulting;&quot;,null )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Expertise Formula Field</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

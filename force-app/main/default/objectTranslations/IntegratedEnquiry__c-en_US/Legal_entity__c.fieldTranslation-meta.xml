@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Legal_entity__c</name>
+    <picklistValues>
+        <masterLabel>GT Restructuring Services LLP</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GT Valuation Advisors LLP</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grant Thornton Advisory Private Limited</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grant Thornton Bharat LLP</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walker Chandiok &amp; Associates</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walker Chandiok &amp; Co LLP</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

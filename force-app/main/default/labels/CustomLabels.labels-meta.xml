@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CaseURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case URL</shortDescription>
+        <value>https://grantthornton--lkdv1dvn.sandbox.lightning.force.com/</value>
+    </labels>
+    <labels>
+        <fullName>Client_Section</fullName>
+        <categories>Client</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Client Section</shortDescription>
+        <value>Clients</value>
+    </labels>
+    <labels>
+        <fullName>Default_Creator_Task</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default Creator - Task</shortDescription>
+        <value>0059D000004odHXQAY</value>
+    </labels>
+    <labels>
+        <fullName>Details_Section</fullName>
+        <categories>details</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Details Section</shortDescription>
+        <value>Prospect Details</value>
+    </labels>
+    <labels>
+        <fullName>EnrichDataFromExternalDB_AuthorizationMsg_Body</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnrichDataFromExternalDB_AuthorizationMsg_Body</shortDescription>
+        <value>You are not authorized to Enrich Data from External Database for the New Client.</value>
+    </labels>
+    <labels>
+        <fullName>EnrichDataFromExternalDB_AuthorizationMsg_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnrichDataFromExternalDB_AuthorizationMsg_Header</shortDescription>
+        <value>Cannot Process your Request</value>
+    </labels>
+    <labels>
+        <fullName>EnrichDataFromExternalDB_ErrorMsg_Body</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnrichDataFromExternalDB_ErrorMsg_Body</shortDescription>
+        <value>Record is already locked.</value>
+    </labels>
+    <labels>
+        <fullName>EnrichDataFromNC_ErrorMsg_Body</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnrichDataFromNC_ErrorMsg_Body</shortDescription>
+        <value>You are not authorized to Enrich Data from External Database for the New Client</value>
+    </labels>
+    <labels>
+        <fullName>MOM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MOM</shortDescription>
+        <value>Minutes of the Meeting
+
+
+
+Purpose is to track key outcomes and devise the future roadmap basis feedback received from each client engagement
+
+
+
+Meeting Agenda:
+
+
+
+* Topic 1
+
+* Topic 2
+
+
+
+Meeting Notes (including Potential Obstacles, Challenges &amp; Red Flags):
+
+* Notes on item 1
+
+* Notes on item 2
+
+
+
+Recommendations &amp; Takeaways:
+
+* Feedback 1
+
+* Feedback 2
+
+
+
+Client’s priorities and any additional Interests in our services:
+
+* Point 1
+
+* Point 2
+
+
+
+Next Steps &amp; Action Items:
+
+* Action item 1
+
+* Action item 2</value>
+    </labels>
+    <labels>
+        <fullName>Message_RecordUnderApproval</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message_RecordUnderApproval</shortDescription>
+        <value>Your record is pending for approval.Please try again after approval.</value>
+    </labels>
+    <labels>
+        <fullName>New_Client_Owner_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Client Owner Profile</shortDescription>
+        <value>NewClientOwner</value>
+    </labels>
+    <labels>
+        <fullName>Scan2SFDC_ErrorMsg_Body</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Scan2SFDC | Error Message - Body</shortDescription>
+        <value>The functionality of scanning the visiting card is only available through LinKreta mobile app</value>
+    </labels>
+    <labels>
+        <fullName>Scan2SFDC_ErrorMsg_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Scan2SFDC | Error Message - Title</shortDescription>
+        <value>Oops !</value>
+    </labels>
+    <labels>
+        <fullName>Sector_Section</fullName>
+        <categories>sector</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sector Section</shortDescription>
+        <value>Sector &amp; Industry</value>
+    </labels>
+    <labels>
+        <fullName>VisualMessageLWC_Alert</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VisualMessageLWC_Alert</shortDescription>
+        <value>Matching Client Found |</value>
+    </labels>
+    <labels>
+        <fullName>VisualMessageLWC_ClientName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VisualMessageLWC_ClientName</shortDescription>
+        <value>Client Name -</value>
+    </labels>
+    <labels>
+        <fullName>VisualMessageLWC_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VisualMessageLWC_Msg</shortDescription>
+        <value>Your new client has already been accepted by the Client council. Please proceed to create an Integrated Enquiry / Enquiry for your client.</value>
+    </labels>
+    <labels>
+        <fullName>fsc_AccessLevel</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccessLevel</shortDescription>
+        <value>Access Level</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Back</fullName>
+        <categories>Buttons,Filters,Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ButtonIsNotSupportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ButtonIsNotSupportedMessage</shortDescription>
+        <value>Following buttons are note supported:</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ConditionLogicHelpText</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConditionLogicHelpText</shortDescription>
+        <value>Use parentheses, AND, OR, and NOT to customize the logic. For example, if you enter “(1 AND 2 AND 3) OR 4”, the flow evaluates whether the first three conditions are true or only the fourth condition is true.</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Delete</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>fsc_FieldIsNotSupportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FieldIsNotSupportedMessage</shortDescription>
+        <value>Following fields are not supported:</value>
+    </labels>
+    <labels>
+        <fullName>fsc_FieldTypeNotSuportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fsc_FieldTypeNotSuportedMessage</shortDescription>
+        <value>You provided an unsupported value for the DataTypeFilter input on Object and Field Picker. Currently the only supported value is ’picklist’</value>
+    </labels>
+    <labels>
+        <fullName>fsc_For</fullName>
+        <categories>Buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>For</shortDescription>
+        <value>For</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Key_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Key Label</shortDescription>
+        <value>Key</value>
+    </labels>
+    <labels>
+        <fullName>fsc_LackingPermissions</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LackingPermissions</shortDescription>
+        <value>You don\&apos;t have the proper permissions for ths action</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ManagerEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ManagerEmptyMessage</shortDescription>
+        <value>&quot;Manager APEX Class&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_MultipleGroupsForRole</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MultipleGroupsForRole</shortDescription>
+        <value>There are multiple groups for that role</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Name</fullName>
+        <categories>quicklinks, Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>fsc_NonePicklistValueLabel</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NonePicklistValueLabel</shortDescription>
+        <value>-- None --</value>
+    </labels>
+    <labels>
+        <fullName>fsc_OWDReadWrite</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OWDReadWrite</shortDescription>
+        <value>Sharing Settings must be private or public read/write to enable manual sharing</value>
+    </labels>
+    <labels>
+        <fullName>fsc_OwnerAdminModify</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OwnerAdminModify</shortDescription>
+        <value>Only the record owner or administrators can modify permissions</value>
+    </labels>
+    <labels>
+        <fullName>fsc_PublicGroups</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PublicGroups</shortDescription>
+        <value>Public Groups</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Queues</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Queues</shortDescription>
+        <value>Queues</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Read</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Read</shortDescription>
+        <value>Read</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ReadWrite</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ReadWrite</shortDescription>
+        <value>Read / Write</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Reason</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reason</shortDescription>
+        <value>Reason</value>
+    </labels>
+    <labels>
+        <fullName>fsc_RelatedUsers</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RelatedUsers</shortDescription>
+        <value>Related Users</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Roles</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Roles</shortDescription>
+        <value>Roles</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Search</fullName>
+        <categories>Actions,Buttons,quicklinks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search in</shortDescription>
+        <value>Search in</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SearchFor</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SearchFor</shortDescription>
+        <value>For</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SetAccessLevel</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SetAccessLevel</shortDescription>
+        <value>Set Access Level</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedAddCapabilitiesEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedAddCapabilitiesEmptyMessage</shortDescription>
+        <value>&quot;Add Capabilities&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedButtonsEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedButtonsEmptyMessage</shortDescription>
+        <value>&quot;Supported Buttons&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedEditCapabilitiesEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedEditCapabilitiesEmptyMessage</shortDescription>
+        <value>&quot;Edit Capabilities&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_TooManyResultsMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TooManyResultsMessage</shortDescription>
+        <value>Your search found more than 200 results.  Keep typing to make it more specific</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Type</fullName>
+        <categories>Buttons,Filters,Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Type</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>fsc_UserOrGroup</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserOrGroup</shortDescription>
+        <value>User Or Group</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Users</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Users</shortDescription>
+        <value>Users</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Value_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Value Label</shortDescription>
+        <value>Value</value>
+    </labels>
+    <labels>
+        <fullName>referral</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>referral</shortDescription>
+        <value>Referral Information</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Others_Services_Please_describe__c</fullName>
+    <description>Others Services (Please describe)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Others Services (Please describe)</inlineHelpText>
+    <label>Others Services (Please describe)</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

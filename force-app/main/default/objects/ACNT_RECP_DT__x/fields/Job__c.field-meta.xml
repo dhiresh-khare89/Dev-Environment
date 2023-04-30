@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job__c</fullName>
+    <externalDeveloperName>PROJECT_CODE</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Job</label>
+    <length>255</length>
+    <referenceTargetField>Job__c.WCGTProjectID__c</referenceTargetField>
+    <referenceTo>Job__c</referenceTo>
+    <relationshipLabel>ACNT_RECP_DT</relationshipLabel>
+    <relationshipName>ACNT_RECP_DT</relationshipName>
+    <type>IndirectLookup</type>
+</CustomField>

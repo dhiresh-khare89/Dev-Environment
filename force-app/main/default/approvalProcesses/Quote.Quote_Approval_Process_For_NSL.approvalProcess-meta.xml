@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>NSL__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>If CSL/Co-CSL approves</label>
+        <name>If_CSL_Co_CSL_approves</name>
+    </approvalStep>
+    <description>If CSL/Co-CSL approves then CSL/Co-CSL will send commercials for NSL approval.</description>
+    <emailTemplate>unfiled$public/Submit_For_Quote_Approval</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.ClientType__c</field>
+            <operation>contains</operation>
+            <value>Key Account - CX</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.ClientType__c</field>
+            <operation>contains</operation>
+            <value>Key Account - GX</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quote.CommercialStatus__c</field>
+            <operation>contains</operation>
+            <value>Quote Accepted</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Final_Approval_Action</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Final_Rejection_Action</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>true</finalRejectionRecordLock>
+    <label>Quote Approval Process For NSL</label>
+    <processOrder>4</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

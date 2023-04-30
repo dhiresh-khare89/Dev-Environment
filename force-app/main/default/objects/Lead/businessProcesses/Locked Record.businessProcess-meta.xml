@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Locked Record</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Accept Client</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Client Take On</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Client Take-On PreWork</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Internal %2F External Discussions</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>New</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Not Accepted Client</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

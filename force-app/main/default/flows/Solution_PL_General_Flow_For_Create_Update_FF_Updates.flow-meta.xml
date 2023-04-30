@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <description>This is a record triggered flow which updates the Primary Key on the Solution (PL) object.</description>
+    <environments>Default</environments>
+    <interviewLabel>Solution (PL) | General Flow - For Create &amp; Update (FF Updates) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Solution (PL) | General Flow - For Create &amp; Update (FF Updates)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Solution_PL</name>
+        <label>Update Solution (PL)</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <inputAssignments>
+            <field>Primary_Key__c</field>
+            <value>
+                <elementReference>$Record.LOV__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Solution_PL</targetReference>
+        </connector>
+        <filterFormula>OR
+(
+	ISNEW(),
+	AND
+	(
+		NOT(ISNEW()),
+		ISCHANGED({!$Record.LOV__c})
+	)
+)</filterFormula>
+        <object>SolutionPL__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

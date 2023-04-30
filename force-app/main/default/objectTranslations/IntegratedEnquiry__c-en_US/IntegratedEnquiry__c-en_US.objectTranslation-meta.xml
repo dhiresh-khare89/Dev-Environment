@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Integrated Enquiry</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Integrated Enquiries</value>
+    </caseValues>
+    <layouts>
+        <layout>ClientandEnquiryRelation Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot Section</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Create_Report_Commercial</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Pitchdeck_Creation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Proposal_Creation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Update_Commercial_Report</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>Generate_Commercials</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New1</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Pitch_Deck_Proposal_Request</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,19 @@
+<apex:page standardController="Opportunity" recordSetVar="opportunities" extensions="ListViewButtonDemo">
+   
+        <apex:includeLightning />
+    
+    <div id="LightningComponentid" />    
+    <script>
+    
+    var agent = navigator.platform;
+    console.log('platform : ', agent);
+    
+    if (navigator.platform == 'Win32') {
+        sforce.one.showToast({
+            "title": 'Error',
+            "message": 'Test',
+            "type": "Error"
+        });
+        sforce.one.back();
+    }   
+</apex:page>

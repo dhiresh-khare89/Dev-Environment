@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advisory_Sub_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Advisory Sub Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Provision of audit training, accountancy and software training</fullName>
+                <default>false</default>
+                <label>Provision of audit training, accountancy and software training</label>
+            </value>
+            <value>
+                <fullName>Business consulting services</fullName>
+                <default>false</default>
+                <label>Business consulting services</label>
+            </value>
+            <value>
+                <fullName>Business Process Solutions</fullName>
+                <default>false</default>
+                <label>Business Process Solutions</label>
+            </value>
+            <value>
+                <fullName>Business risk services</fullName>
+                <default>false</default>
+                <label>Business risk services</label>
+            </value>
+            <value>
+                <fullName>Company formation, secretarial registration and directorship services</fullName>
+                <default>false</default>
+                <label>Company formation, secretarial registration and directorship services</label>
+            </value>
+            <value>
+                <fullName>Forensic investigations</fullName>
+                <default>false</default>
+                <label>Forensic investigations</label>
+            </value>
+            <value>
+                <fullName>Legal services</fullName>
+                <default>false</default>
+                <label>Legal services</label>
+            </value>
+            <value>
+                <fullName>Recovery and Reorganisation</fullName>
+                <default>false</default>
+                <label>Recovery and Reorganisation</label>
+            </value>
+            <value>
+                <fullName>Transaction services</fullName>
+                <default>false</default>
+                <label>Transaction services</label>
+            </value>
+            <value>
+                <fullName>Other advisory services (Please describe)</fullName>
+                <default>false</default>
+                <label>Other advisory services (Please describe)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

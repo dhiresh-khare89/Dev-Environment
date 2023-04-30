@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activity__c</fullName>
+    <externalId>false</externalId>
+    <label>Activity</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>#AtYourBest as Super Coach Programme Training</fullName>
+                <default>false</default>
+                <label>#AtYourBest as Super Coach Programme Training</label>
+            </value>
+            <value>
+                <fullName>Active Solutions</fullName>
+                <default>false</default>
+                <label>Active Solutions</label>
+            </value>
+            <value>
+                <fullName>AD and Messaging operations</fullName>
+                <default>false</default>
+                <label>AD and Messaging operations</label>
+            </value>
+            <value>
+                <fullName>Adhoc analysis</fullName>
+                <default>false</default>
+                <label>Adhoc analysis</label>
+            </value>
+            <value>
+                <fullName>Analysis &amp; Reporting</fullName>
+                <default>false</default>
+                <label>Analysis &amp; Reporting</label>
+            </value>
+            <value>
+                <fullName>Analysis &amp; Report writing</fullName>
+                <default>false</default>
+                <label>Analysis &amp; Report writing</label>
+            </value>
+            <value>
+                <fullName>Application Analysis</fullName>
+                <default>false</default>
+                <label>Application Analysis</label>
+            </value>
+            <value>
+                <fullName>Application Deployment</fullName>
+                <default>false</default>
+                <label>Application Deployment</label>
+            </value>
+            <value>
+                <fullName>Attending External Events</fullName>
+                <default>false</default>
+                <label>Attending External Events</label>
+            </value>
+            <value>
+                <fullName>Authentic Conversations workshop</fullName>
+                <default>false</default>
+                <label>Authentic Conversations workshop</label>
+            </value>
+            <value>
+                <fullName>Billable Time</fullName>
+                <default>false</default>
+                <label>Billable Time</label>
+            </value>
+            <value>
+                <fullName>Brainstorming</fullName>
+                <default>false</default>
+                <label>Brainstorming</label>
+            </value>
+            <value>
+                <fullName>Business Budgeting</fullName>
+                <default>false</default>
+                <label>Business Budgeting</label>
+            </value>
+            <value>
+                <fullName>Candidate Search</fullName>
+                <default>false</default>
+                <label>Candidate Search</label>
+            </value>
+            <value>
+                <fullName>Capturing deals</fullName>
+                <default>false</default>
+                <label>Capturing deals</label>
+            </value>
+            <value>
+                <fullName>Client questionnaire</fullName>
+                <default>false</default>
+                <label>Client questionnaire</label>
+            </value>
+            <value>
+                <fullName>Coaching/Mentoring</fullName>
+                <default>false</default>
+                <label>Coaching/Mentoring</label>
+            </value>
+            <value>
+                <fullName>Communications &amp; follow-up</fullName>
+                <default>false</default>
+                <label>Communications &amp; follow-up</label>
+            </value>
+            <value>
+                <fullName>Conducting External Training</fullName>
+                <default>false</default>
+                <label>Conducting External Training</label>
+            </value>
+            <value>
+                <fullName>Conducting Internal Training</fullName>
+                <default>false</default>
+                <label>Conducting Internal Training</label>
+            </value>
+            <value>
+                <fullName>Connect Session</fullName>
+                <default>false</default>
+                <label>Connect Session</label>
+            </value>
+            <value>
+                <fullName>Coordination/Interviews</fullName>
+                <default>false</default>
+                <label>Coordination/Interviews</label>
+            </value>
+            <value>
+                <fullName>DAP/PAP</fullName>
+                <default>false</default>
+                <label>DAP/PAP</label>
+            </value>
+            <value>
+                <fullName>Data Backup</fullName>
+                <default>false</default>
+                <label>Data Backup</label>
+            </value>
+            <value>
+                <fullName>Data cleansing &amp; transition to CRM</fullName>
+                <default>false</default>
+                <label>Data cleansing &amp; transition to CRM</label>
+            </value>
+            <value>
+                <fullName>Detailed Analysis &amp; Reporting</fullName>
+                <default>false</default>
+                <label>Detailed Analysis &amp; Reporting</label>
+            </value>
+            <value>
+                <fullName>Documentation/Offer/BGV</fullName>
+                <default>false</default>
+                <label>Documentation/Offer/BGV</label>
+            </value>
+            <value>
+                <fullName>Drafting job description</fullName>
+                <default>false</default>
+                <label>Drafting job description</label>
+            </value>
+            <value>
+                <fullName>Exceptional Coach Programme Training</fullName>
+                <default>false</default>
+                <label>Exceptional Coach Programme Training</label>
+            </value>
+            <value>
+                <fullName>ERP/CRM Maintenance</fullName>
+                <default>false</default>
+                <label>ERP/CRM Maintenance</label>
+            </value>
+            <value>
+                <fullName>External</fullName>
+                <default>false</default>
+                <label>External</label>
+            </value>
+            <value>
+                <fullName>FA Management</fullName>
+                <default>false</default>
+                <label>FA Management</label>
+            </value>
+            <value>
+                <fullName>Induction and onboarding</fullName>
+                <default>false</default>
+                <label>Induction and onboarding</label>
+            </value>
+            <value>
+                <fullName>Reviews &amp; meetings</fullName>
+                <default>false</default>
+                <label>Reviews &amp; meetings</label>
+            </value>
+            <value>
+                <fullName>Taking the survey</fullName>
+                <default>false</default>
+                <label>Taking the survey</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

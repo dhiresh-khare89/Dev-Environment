@@ -1,0 +1,27 @@
+<template>
+    <template if:false={nextPage}>
+    <lightning-card>
+        <lightning-record-edit-form object-api-name="Lead" record-id={recordId}>
+            <lightning-layout multiple-rows="4">
+                <lightning-input-field field-name="Sector__c" name="Sector__c" onchange={handlePicklistChange}>
+                </lightning-input-field>
+                <lightning-input-field field-name="Solution__c" name="Solution__c" onchange={handlePicklistChange}>
+                </lightning-input-field>
+                <lightning-input-field field-name="Expertise__c" name="Expertise__c" onchange={handlePicklistChange}>
+                </lightning-input-field>
+            </lightning-layout>
+        </lightning-record-edit-form>
+    </lightning-card>
+    <div style="float : right"  class="slds-p-right_medium">
+        <lightning-button variant="brand" label="Next"  onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    </div>
+</template>
+ <template if:true={nextPage}>
+    <lightning-card>
+        <lightning-dual-listbox label="Sub Expertise" name="SubExpertise__c" options={subExpertOpt} 
+        value={subExpertOpt} onchange={handlePicklistChange}>
+        </lightning-dual-listbox>
+    </lightning-card>
+ 
+ </template>
+</template>

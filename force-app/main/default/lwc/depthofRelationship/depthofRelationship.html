@@ -1,0 +1,45 @@
+<template>
+    <lightning-card title="Display the External Salesforce Org data based on Account" custom-icon="custom:icon13">
+        <div class="slds slds-p-horizontal--medium">
+            <h2 class="slds-m-bottom--x-small" style="color:darkslateblue; font-weight:bold;">Display Account details</h2>  
+            <div class="slds-grid slds-wrap">            
+                <template if:true={accountData}>                    
+                    <lightning-datatable key-field="id" data={accountList} columns={columnList} hide-checkbox-column="true" onrowaction={extContactData}></lightning-datatable>
+                </template>
+                <template if:false={accountData}>
+                    <h3><strong><span style="color:brown;">{dataNotFoundForAccount}</span></strong></h3>
+                </template>
+            </div><br/>
+        
+            <h2 class="slds-m-bottom--x-small" style="color:darkslateblue; font-weight:bold;">Displaying External Contact Records based on Account</h2>  
+            <template if:true={extContactData}>                  
+                <div id="tableBox" class="slds-col slds-size_11-of-12 slds-m-bottom--medium">
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered" border="1px solid #ccc" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>                          
+                            </tr>
+                        </thead>                  
+                        <tbody>
+                            <template for:each={contactsData} for:item="conItem">
+                                <tr key={conItem.Id}>
+                                    <td>{conItem.FirstName}</td>
+                                    <td>{conItem.LastName}</td>
+                                    <td>{conItem.Email}</td>
+                                    <td>{conItem.Phone}</td>                        
+                                </tr>
+                            </template>
+                        </tbody>                      
+                    </table>
+                    
+                </div>
+            </template>
+            <template if:false={extContactData}>
+                <h3><strong><span style="color:brown;">{dataNotFoundForExtContact}</span></strong></h3>
+            </template>
+        </div>
+    </lightning-card>           
+</template>

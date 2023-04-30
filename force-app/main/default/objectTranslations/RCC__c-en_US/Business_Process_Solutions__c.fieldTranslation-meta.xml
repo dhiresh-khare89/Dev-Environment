@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Business_Process_Solutions__c</name>
+    <picklistValues>
+        <masterLabel>Business Process Solutions - Back office outsourcing</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Process Solutions - Business process outsourcing and shared service centre</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Process Solutions - Global compliance and reporting solutions (GCRS)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

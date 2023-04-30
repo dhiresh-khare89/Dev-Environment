@@ -1,0 +1,24 @@
+<aura:component controller="SubmitForApprovalButtonController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader" access="global" >
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="myVal" type="String" />
+    <aura:attribute name="sObjectName" type="String" default="{!sObjectName}"/>
+    <div class="slds-text-heading_medium slds-text-align_center">Submit for NSL Approval</div>
+    <br></br>
+    
+    <aura:attribute name="newClientRecord" type="Object" />
+    
+    <force:recordData aura:id="recordLoader"
+                      fields="Name, Expertise__c, SubExpertise__c, Solution__c, OwnerId"
+                      recordId="{!v.recordId}"
+                      targetFields="{!v.newClientRecord}"
+                      />
+    
+    <div class="textarea">
+        <lightning:textarea name="input3" value="{!v.myVal}" label="Comments" placeholder="type here..."/>
+    </div>
+    <br></br>
+    <div class="slds-float_right" style="margin-top: 5px;">
+        <lightning:button variant="brand" label="Submit" title="Brand action" onclick="{!c.submitComments}"/>
+        <lightning:button variant="brand" label="Cancel" title="Brand action" onclick="{!c.closeComponent}"/>
+    </div>
+</aura:component>

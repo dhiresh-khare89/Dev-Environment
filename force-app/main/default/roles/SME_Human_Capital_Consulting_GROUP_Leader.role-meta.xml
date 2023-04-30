@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Read</contactAccessLevel>
+    <description>SME Human Capital Consulting GROUP Leader</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>SME Human Capital Consulting GROUP Leader</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>EBUL_Human_Capital_Consulting</parentRole>
+</Role>

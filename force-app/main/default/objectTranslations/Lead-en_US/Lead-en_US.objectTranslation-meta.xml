@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>New Client</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>New Clients</value>
+    </caseValues>
+    <layouts>
+        <layout>Closed New Client</layout>
+        <sections>
+            <label></label>
+            <section>Client Classification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Financials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Professional Services Required (POC)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Professional Services required</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Prospect Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quip Fields Referral Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Referral Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Short Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Client Classification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Financials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Professional Services Required (POC)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Professional Services required</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Prospect Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quip Fields Referral Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Referral Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Short Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Markets Ecosystems Team layout</layout>
+        <sections>
+            <label></label>
+            <section>C&amp;M Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Client Classification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Financials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ownership Hierarchy</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Professional Services required</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Prospect Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quip Fields Referral Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Referral Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Short Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NSL layout</layout>
+        <sections>
+            <label></label>
+            <section>Client Classification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Financials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ownership Hierarchy</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Professional Services required</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Prospect Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quip Fields Referral Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Referral Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Short Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Client Owner Layout</layout>
+        <sections>
+            <label></label>
+            <section>Client Classification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Financials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ownership Hierarchy</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Professional Services required</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Prospect Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quip Fields Referral Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Referral Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Short Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sector Assignment Queue Layout</layout>
+        <sections>
+            <label></label>
+            <section>Client Classification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Financials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ownership Hierarchy</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Professional Services required</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Prospect Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quip Fields Referral Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Referral Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Short Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sector Business Partner Layout</layout>
+        <sections>
+            <label></label>
+            <section>Client Classification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Client Financials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ownership Hierarchy</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Professional Services required</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Prospect Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quip Fields Referral Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Referral Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Short Summary</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>ClientFitmentEvaluation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Create_Meeting</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Create_New</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>DefiningClientsNatureofBusiness</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Enrich_Client_from_CAPIQ</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Enrich_Data_from_External_Databa_Test</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Enrich_Data_from_External_Database</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Client1</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Client2</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SubmitForClientCouncilApproval</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SubmitForNSLApproval</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Submit_For_Client_Council_Approvals</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Submit_For_NSL_Approvals</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>UpdateProfessionServices</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Update_Professional_Services</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Category_Approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Client_Name_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>First_Name_Should_be_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>First_Name_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>IfCountryCodeIsIndiathenOnly10Digits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Phone_field_should_take_only_number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>RejectReasonFilledOnlyInNotAcceptCase</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>RejectRemarksMustIfRejectReasonOthers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Remarks_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Required_Field_For_Internal_External_Sta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Required_Fields_For_Client_Connect_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Required_Fields_for_New_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>SectorReadOnly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Sector_Cannot_be_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Users_Contains_T1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ValidationForOpenTasks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ValidationOnNSLApprovalStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Validation_For_other_Sector</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Validation_Rule_If_CC_App_Rejected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Validation_Rule_for_Not_Accept_Client</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Validation_on_Converted_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>addError</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>mobile_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>only_SBP_or_NSL_can_change_owner</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Create_New</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_Client</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_Client_test</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Scan</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Scan_Card</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Scan_Visiting_Card_Mobile</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Scan_visiting_card</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Steps_for_New_Client_Creation</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Visiting_Card</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WCGT_Expense_Approval</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WCGT_Expense_Entry</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WCGT_TimeSheet_Entry</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>WCGT_Timesheet_Approval</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>pi__Send_to_Prospect_Insight</name>
+    </webLinks>
+</CustomObjectTranslation>

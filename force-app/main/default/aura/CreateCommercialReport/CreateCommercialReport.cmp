@@ -1,0 +1,76 @@
+<aura:component Controller ="CreateCommercialReportVFController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:html tag="style">
+        .slds-modal__container {
+        overflow-wrap: break-word;
+        max-width: 100rem !important;
+        width:100% !important;
+        }
+        .slds-modal__header {
+        display: none !important;
+        }
+    </aura:html>
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="wrapperList" type="map" />
+    <aura:attribute name="IntegratedEnquiryName" type="String"/>
+    
+    <div class="slds-text-heading_small slds-align_absolute-center" style="height:3rem">
+        <h2>
+            <strong>Commercial Report For {!v.IntegratedEnquiryName}</strong>
+        </h2>
+    </div>
+    <br/>
+    
+    
+    <div class="slds-box">
+        
+        <aura:iteration items="{!v.wrapperList}" var="wrapObject1" >
+            <div >
+                <h2 class="slds-absolute">
+                    <aura:iteration items="{!wrapObject1.value}" var="wrapObject2"  start="1" end = "2">
+                        <Strong class="slds-float_left" width="30%"><a data-anchorId="{!wrapObject2.Id}" onclick="{!c.onClick}">{!wrapObject1.key}</a></Strong>
+                        <Strong style="padding-left:30%" width="30%">Discount % = {!wrapObject2.discount}</Strong> 
+                        <Strong class="slds-float_right" width="30%">Grand Total = {!wrapObject2.grandTotal} </Strong> 
+                        <strong></strong>
+                    </aura:iteration>
+                </h2>
+            </div>
+            <br></br>
+            <table border="2" class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+                <thead >
+                    <tr>
+                        <th scope="col" width="30%"><span class="slds-truncate">Commercial Name</span></th>
+                        <th scope="col" width="40%"><span class="slds-truncate">Product Name</span></th>
+                        <th scope="col" width="30%"><span class="slds-truncate">Quantity</span></th>
+                        <th scope="col" width="30%"><span class="slds-truncate">Sales Price</span></th>
+                        <th scope="col" width="30%"><span class="slds-truncate">Commercial Amount</span></th>
+                        
+                        <th scope="col" width="30%"><span class="slds-truncate">Net Amount</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    
+                    
+                    <aura:iteration items="{!wrapObject1.value}" var="wrapObject" >
+                        <tr>
+                            <td>{!wrapObject.quoteName}</td>
+                            <td>{!wrapObject.ProductName}</td>
+                            <td>{!wrapObject.quantity}</td>
+                            <td>{!wrapObject.salesPrice}</td>
+                            <td>{!wrapObject.commercialAmount}</td>
+                            
+                            <td>{!wrapObject.netAmount}</td>
+                        </tr>
+                    </aura:iteration>
+                    
+                </tbody>
+            </table> 
+        </aura:iteration>
+    </div>
+    <br></br>
+    <br></br>
+    <div class="slds-form-element buttons slds-text-align_center">
+        <lightning:button variant="brand" label="Download Commercial Report" title="Brand action" onclick="{!c.download }" />
+    </div>
+</aura:component>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountType__c</fullName>
+    <externalId>false</externalId>
+    <label>Client Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Key Account - CX</fullName>
+                <default>false</default>
+                <label>Key Account - CX</label>
+            </value>
+            <value>
+                <fullName>Key Account - GX</fullName>
+                <default>false</default>
+                <label>Key Account - GX</label>
+            </value>
+            <value>
+                <fullName>Non Key Client</fullName>
+                <default>true</default>
+                <label>Non Key Client</label>
+            </value>
+            <value>
+                <fullName>Apex Chambers</fullName>
+                <default>false</default>
+                <label>Apex Chambers</label>
+            </value>
+            <value>
+                <fullName>Bilateral Chamber</fullName>
+                <default>false</default>
+                <label>Bilateral Chamber</label>
+            </value>
+            <value>
+                <fullName>Sectoral Chamber</fullName>
+                <default>false</default>
+                <label>Sectoral Chamber</label>
+            </value>
+            <value>
+                <fullName>Regional &amp; Other Chamber</fullName>
+                <default>false</default>
+                <label>Regional &amp; Other Chamber</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubSector__c</fullName>
+    <description>It contains the information of sub sector related to particular sector.</description>
+    <externalId>false</externalId>
+    <label>Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sector__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>SubSector</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>TMT</controllingFieldValue>
+            <valueName>Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TMT</controllingFieldValue>
+            <valueName>Media &amp; telecom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Auto &amp; Auto Components</controllingFieldValue>
+            <valueName>Auto &amp; Auto Components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Auto &amp; Auto Components</controllingFieldValue>
+            <valueName>Aerospace &amp; defense</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CIP &amp; Retail</controllingFieldValue>
+            <valueName>Consumer, Retail and E-commerce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CIP &amp; Retail</controllingFieldValue>
+            <valueName>Food &amp; Agri</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CIP &amp; Retail</controllingFieldValue>
+            <valueName>Industrial products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Financial Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government</controllingFieldValue>
+            <valueName>Government</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Owners &amp; Private Clients</controllingFieldValue>
+            <valueName>Owners &amp; Private Clients</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PE/VC</controllingFieldValue>
+            <valueName>PE / VC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pharma &amp; Healthcare Services</controllingFieldValue>
+            <valueName>Healthcare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pharma &amp; Healthcare Services</controllingFieldValue>
+            <valueName>Pharmaceuticals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate &amp; Infra</controllingFieldValue>
+            <valueName>Real Estate &amp; Infra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate &amp; Infra</controllingFieldValue>
+            <valueName>Cleantech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate &amp; Infra</controllingFieldValue>
+            <valueName>Energy &amp; natural resources</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

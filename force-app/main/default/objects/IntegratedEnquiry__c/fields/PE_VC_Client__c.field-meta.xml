@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PE_VC_Client__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>PE/VC Client</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Integrated Enquiries (PE/VC Client)</relationshipLabel>
+    <relationshipName>Integrated_Enquiries</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

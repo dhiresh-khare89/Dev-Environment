@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_Alert_to_client_council_user_on_submit_for_CC_approval</fullName>
+        <description>Email Alert to client council user on submit for CC approval</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Client_Council_Approval</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_on_Client_Counsil_Approval_Submission</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_alert_on_Client_Council_Approval</fullName>
+        <description>Email alert on Client Council Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_Alert_on_Client_Council_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_alert_on_Client_Council_Rejection</fullName>
+        <description>Email alert on Client Council Rejection</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_Alert_on_Client_Council_Rejection</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_alert_on_NSL_rejection</fullName>
+        <description>Email alert on NSL rejection</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_on_NSL_rejection</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_alert_to_C_M_Team_on_NSL_Approval</fullName>
+        <description>Email alert to C&amp;M Team on NSL Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>C_M_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_to_C_M_Team_on_Client_Take_on_Prework_Stage</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_on_NSL_Approval</fullName>
+        <description>Email on NSL Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_template_on_NSL_approval</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Client_Notification_To_Markets_Ecosystems_Team</fullName>
+        <description>New Client | Notification To Markets Ecosystems Team</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>C_M_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Client_Notification_To_Markets_Ecosystems_Team</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_to_Nsl_Submission</fullName>
+        <description>Send Email to Nsl Submission</description>
+        <protected>false</protected>
+        <recipients>
+            <field>NSL__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Submit_For_NSL_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_to_outbound_team</fullName>
+        <description>Send Email to outbound team</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Sector_Assignment_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/OutBound_team_Email_template</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>ApprovalRejectedDate</fullName>
+        <field>CCApprovedRejectedDate__c</field>
+        <formula>Today()</formula>
+        <name>Approval Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Approved_Date</fullName>
+        <field>CCApprovedRejectedDate__c</field>
+        <formula>Today()</formula>
+        <name>Approval Approved Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CCApprovalStatusPending</fullName>
+        <field>CCApprovalStatus__c</field>
+        <literalValue>Pending</literalValue>
+        <name>CCApprovalStatusPending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ClientCouncilStatusApproved</fullName>
+        <field>CCApprovalStatus__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Client Council Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ClientCouncilStatusRejected</fullName>
+        <field>CCApprovalStatus__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Client Council Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Client_Council_Status_Pending</fullName>
+        <field>CCApprovalStatus__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Client Council Status Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DS_Team_Approval_Recall</fullName>
+        <field>NSLApprovalStatus__c</field>
+        <name>DS Team Approval Recall</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NSLApprovalStatusPending</fullName>
+        <field>NSLApprovalStatus__c</field>
+        <literalValue>Pending</literalValue>
+        <name>NSLApprovalStatusPending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NSL_Approval_Status_Approved</fullName>
+        <field>NSLApprovalStatus__c</field>
+        <literalValue>Approved</literalValue>
+        <name>NSL Approval Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NSL_Approval_Status_Rejected</fullName>
+        <field>NSLApprovalStatus__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>NSL Approval Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NSL_Approved_Date</fullName>
+        <field>NSLApprovedRejectedDate__c</field>
+        <formula>Today()</formula>
+        <name>NSL Approved Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NSL_Rejected_Date</fullName>
+        <field>NSLApprovedRejectedDate__c</field>
+        <formula>Today()</formula>
+        <name>NSL Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Request_Submitted</fullName>
+        <field>NSLApprovalStatus__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Request Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Submitted_for_approval</fullName>
+        <field>Submitted_For_Approval__c</field>
+        <literalValue>1</literalValue>
+        <name>Submitted for approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateNewClientStatus</fullName>
+        <field>Status</field>
+        <literalValue>Accept Client</literalValue>
+        <name>UpdateNewClientStatus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateNewClientStatuss</fullName>
+        <field>Status</field>
+        <literalValue>NotAccept</literalValue>
+        <name>UpdateNewClientStatus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status</fullName>
+        <field>NSLApprovalStatus__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Update Approval Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_CCApprovalStatus_Pending</fullName>
+        <field>CCApprovalStatus__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Update CCApproval Status Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_CCApproval_Status_Pending</fullName>
+        <field>CCApprovalStatus__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Update CCApproval Status Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Submitter</fullName>
+        <field>SubmitterID__c</field>
+        <formula>OwnerId</formula>
+        <name>Update Submitter</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_new_client_status_to_client_take</fullName>
+        <field>Status</field>
+        <literalValue>Client Take-On PreWork</literalValue>
+        <name>Update new client status to client take</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_status</fullName>
+        <field>NSLApprovalStatus__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Update status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

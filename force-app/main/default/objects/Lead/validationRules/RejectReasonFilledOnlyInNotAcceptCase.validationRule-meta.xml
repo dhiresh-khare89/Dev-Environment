@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RejectReasonFilledOnlyInNotAcceptCase</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+AND(NOT(ISPICKVAL(Status, &apos;Client Take On&apos;)),
+ISPICKVAL( CCApprovalStatus__c , &apos;&apos;),
+NOT(ISPICKVAL( Reject_Reason__c , &apos;&apos;))),
+
+AND(ISPICKVAL(Status, &apos;Client Take On&apos;),
+ISPICKVAL(CCApprovalStatus__c, &apos;Approved&apos;),
+NOT(ISPICKVAL( Reject_Reason__c , &apos;&apos;))
+))</errorConditionFormula>
+    <errorMessage>You cannot fill Reject Reason until New Client Status reached Not Accepted Client.</errorMessage>
+</ValidationRule>

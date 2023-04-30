@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Auto &amp; Auto Components</fullName>
+        <default>false</default>
+        <label>Auto &amp; Auto Components</label>
+    </customValue>
+    <customValue>
+        <fullName>CIP &amp; Retail</fullName>
+        <default>false</default>
+        <label>CIP &amp; Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Services</fullName>
+        <default>false</default>
+        <label>Financial Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Global Delivery</fullName>
+        <default>false</default>
+        <label>Global Delivery</label>
+    </customValue>
+    <customValue>
+        <fullName>Government</fullName>
+        <default>false</default>
+        <label>Government</label>
+    </customValue>
+    <customValue>
+        <fullName>Law Firms</fullName>
+        <default>false</default>
+        <label>Law Firms</label>
+    </customValue>
+    <customValue>
+        <fullName>Owners &amp; Private Clients</fullName>
+        <default>false</default>
+        <label>Owners &amp; Private Clients</label>
+    </customValue>
+    <customValue>
+        <fullName>PE/VC</fullName>
+        <default>false</default>
+        <label>PE/VC</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharma &amp; Healthcare Services</fullName>
+        <default>false</default>
+        <label>Pharma &amp; Healthcare Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate &amp; Infra</fullName>
+        <default>false</default>
+        <label>Real Estate &amp; Infra</label>
+    </customValue>
+    <customValue>
+        <fullName>TMT</fullName>
+        <default>false</default>
+        <label>TMT</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <description>This is having all the sector details of GT.</description>
+    <masterLabel>Sector</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

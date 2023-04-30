@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_On_IdentifyCreate_Opportunity</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(  REL_BUL_Approval_Status__c , &apos;Pending&apos;),
+  NOT(ISPICKVAL( StageName , &apos;Identify/Create Enquiry&apos;)),
+ ISCHANGED( StageName ),NOT( ByPassValidation__c ))</errorConditionFormula>
+    <errorMessage>RCC approval already submitted to REL/BUL, Stage will not move further until revert from REL/BUL.</errorMessage>
+</ValidationRule>

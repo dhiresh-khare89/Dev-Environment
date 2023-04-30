@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Steps_for_New_Client_Creation</fullName>
+    <availability>online</availability>
+    <description>How to create a New Client on LinKreta?</description>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Steps for New Client Creation</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://wccindia-my.sharepoint.com/personal/gtsharepoint_wccindia_onmicrosoft_com/_layouts/15/onedrive.aspx?ga=1&amp;id=%2Fpersonal%2Fgtsharepoint%5Fwccindia%5Fonmicrosoft%5Fcom%2FDocuments%2FDelhi%2FCRMTransformation%2FLinKreta%20Training%20Material%2FNew%20Client%20journey%5FSample%20Video%2Emp4&amp;parent=%2Fpersonal%2Fgtsharepoint%5Fwccindia%5Fonmicrosoft%5Fcom%2FDocuments%2FDelhi%2FCRMTransformation%2FLinKreta%20Training%20Material</url>
+</WebLink>

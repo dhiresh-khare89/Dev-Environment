@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Rule_for_Not_Accept_Client</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( OR(ISPICKVAL( CCApprovalStatus__c , &apos;&apos;),ISPICKVAL( CCApprovalStatus__c , &apos;Approved&apos;),
+ISPICKVAL( CCApprovalStatus__c , &apos;Pending&apos;)),
+ISCHANGED(Status),
+ISPICKVAL(Status, &apos;NotAccept&apos;),
+NOT(ByPassValidation__c)
+)</errorConditionFormula>
+    <errorMessage>New Client Status cannot be marked as &apos;Not Accepted Client&apos; if CC Approval Status is &apos;Approved.</errorMessage>
+</ValidationRule>

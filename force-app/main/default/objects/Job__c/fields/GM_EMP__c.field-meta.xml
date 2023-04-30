@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GM_EMP__c</fullName>
+    <externalId>false</externalId>
+    <label>GM_EMP</label>
+    <length>50</length>
+    <referenceTo>GM_EMP__x</referenceTo>
+    <relationshipLabel>Jobs</relationshipLabel>
+    <relationshipName>Jobs</relationshipName>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>ExternalLookup</type>
+</CustomField>

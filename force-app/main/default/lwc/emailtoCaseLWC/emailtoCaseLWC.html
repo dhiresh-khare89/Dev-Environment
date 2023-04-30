@@ -1,0 +1,60 @@
+<template>
+    <lightning-card title="Cases">
+        <lightning-layout>
+            <template if:true={isLoading}>
+                <div class="slds-p-around_x-medium">
+                    <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+                </div>
+            </template>
+            <lightning-layout-item size="12" padding="around-small" small-device-size="12"
+            medium-device-size="12" large-device-size="12">
+            <div class="slds-scrollable" style="height:100%;width:100%">
+                <table class="slds-table slds-no-row-hover slds-table_bordered slds-table_col-bordered size=12 small-device-size=6 medium-device-size=4 large-device-size=3">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Case Number</th>
+                            <th>Subject</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={caseList.data} for:item="caseObj" for:index="index">
+                            <tr key={caseObj.CaseNumber}>
+                                <th>
+                                    <lightning-input onchange={onhandleSelected} type="checkbox" value={caseObj.CaseNumber}>
+                                    </lightning-input>
+                                </th>
+                                <th>
+                                    <a onclick={handleRedirect} data-id={caseObj.Id}>{caseObj.CaseNumber}</a>
+                                </th>
+                                <th>{caseObj.Subject}</th>
+                                <th>{caseObj.SuppliedName}</th>
+                                <th>{caseObj.SuppliedEmail}</th>
+                                <th>
+                                    <div style="width:fit-content; margin:0px auto;">
+                                        
+                                    <lightning-button label="Create New Client" name={caseObj.CaseNumber} variant="brand-outline"
+                                        onclick={onhandleChange}>
+                                        
+                                    </lightning-button>
+                                
+                                    </div>
+                                </th>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+                <br/>
+                <br/>
+                <div style="width:fit-content; margin:0px auto;">
+                        <lightning-button label="Create Bulk New Client" variant="brand" onclick={onhandleBulkLead}>
+                        </lightning-button>
+                </div>
+            </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

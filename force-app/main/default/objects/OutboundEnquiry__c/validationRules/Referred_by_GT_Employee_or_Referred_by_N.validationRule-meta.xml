@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referred_by_GT_Employee_or_Referred_by_N</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(ISBLANK( GTEmployee__c ),ISBLANK(  ReferredByNonLinKretaUsers__c  ))</errorConditionFormula>
+    <errorMessage>Referred by GT Employee or Referred by Non LinKreta Users (Only one needs to be updated)</errorMessage>
+</ValidationRule>

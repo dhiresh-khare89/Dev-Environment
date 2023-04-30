@@ -1,0 +1,142 @@
+<template>
+    <div style="padding:0.5rem;background:lightgrey">
+        <div class="slds-text-color_inverse" style="color: inherit;">Engagement Partner And Engagement Leader In Pursuit<span><button class="slds-button slds-float_right" style="margin-top: -0.4rem;" onclick={handleOpenForm}>Add New</button></span></div>
+    </div>
+    <!-- Modal to open form -->
+    <template if:true={isOpenForm}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <!-- Form Heading -->
+                        <div class="demo-only" style="padding:0.5rem;background:#16325c">
+                            <div class="slds-text-color_inverse">ADD NEW INDIVIDUAL RESPONSES</div>
+                        </div>
+                            <br/>
+                           <!-- Form Body -->
+                           <div class="slds-grid slds-gutters">
+                            <div class="slds-col">
+                            <label>Employee Name <abbr class="slds-required" title="required"> *</abbr></label>
+                            </div>
+                            <div class="slds-col">
+                            <input type="text" class="slds-input slds-combobox__input" role="combobox" placeholder="Search..." />
+                            <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right">
+                            </span>
+                        </div>
+                        </div>
+                        <br/>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col">
+                                <label>Engagement partner in pursuit<abbr class="slds-required" title="required"> *</abbr></label>   
+                            </div>
+                            <div class="slds-col" style="margin-right: 15rem;">
+                                <input type="checkbox" name="options" checked="" />
+                            </div>
+                        </div>
+                        </div>
+            <div class="slds-modal__footer" style="text-align: center;" slot="actions">
+                    <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick={closeOpenForm}>Ok</button>
+                    <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick={closeOpenForm}>Cancel</button>
+                    </div>
+            </div>
+        </section>
+    </template>
+    <!-- List view for selected record -->
+    <template if:true={showData}>
+        <lightning-card>
+            <article class="slds-card">
+                <div class="slds-card__body">
+                <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_col-bordered slds-table_fixed-layout" role="grid" aria-label="Example table in a Card">
+                <thead>
+                <tr class="slds-line-height_reset">
+                <th class="" scope="col">
+                    <div class="slds-truncate slds-cell-wrap" title="S.No">
+                        <div class="demo-only" style="padding:0.5rem;background:#ae93ca">
+                            <div class="slds-text-color_inverse">Delete</div>
+                        </div>
+                    </div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate slds-cell-wrap" title="Sub Service Line">
+                        <div class="demo-only" style="padding:0.5rem;background:#ae93ca">
+                            <div class="slds-text-color_inverse">Employee Name</div>
+                        </div>
+                    </div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate slds-cell-wrap" title="Sub-Sub Service Line">
+                        <div class="demo-only" style="padding:0.5rem;background:#ae93ca">
+                            <div class="slds-text-color_inverse">Designation</div>
+                        </div>
+                    </div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate slds-cell-wrap" title="Definition For Sub-Sub Service Line">
+                        <div class="demo-only" style="padding:0.5rem;background:#ae93ca">
+                            <div class="slds-text-color_inverse">Email Address</div>
+                        </div>
+                    </div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate slds-cell-wrap" title="Definition For Sub-Sub Service Line">
+                        <div class="demo-only" style="padding:0.5rem;background:#ae93ca">
+                            <div class="slds-text-color_inverse">Mobile No</div>
+                        </div>
+                    </div>
+                </th>
+                <th class="engpartner" scope="col">
+                    <div class="slds-truncate slds-cell-wrap" title="Definition For Sub-Sub Service Line">
+                        <div class="demo-only" style="padding:0.5rem;background:#ae93ca">
+                            <div class="slds-text-color_inverse">Engagement Partner</div>
+                        </div>
+                    </div>
+                </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="slds-hint-parent">
+                <td class="slds-cell-wrap" role="gridcell" data-label="S.No">
+                    <div class="slds-truncate">
+                        <lightning-button-icon icon-name="utility:delete" alternative-text="Delete" class="slds-m-left_xx-small" title="Delete"></lightning-button-icon>
+                    </div> 
+                </td>
+                <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services">
+                    <div class="slds-truncate" title="Business Risk Services">
+                    Avesh Awasthi
+                </div>
+                </td>
+                <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services Section">
+                    <div class="slds-grid slds-grid_vertical">
+                        <div class="slds-col">
+                            Director
+                        </div>
+                        </div>
+                </td>
+                <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services Section Details">
+                    <div class="slds-grid slds-grid_vertical">
+                        <div class="slds-col">
+                            aveshawasthi@gt.com
+                        </div>
+                        </div>
+                </td>
+                <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services Section">
+                    <div class="slds-grid slds-grid_vertical">
+                        <div class="slds-col">
+                            9867578654
+                        </div>
+                        </div>
+                </td>
+                <td class="slds-cell-wrap" role="gridcell" data-label="Business Risk Services Section">
+                    <div class="slds-grid slds-grid_vertical">
+                        <div class="slds-col">
+                            Yes
+                        </div>
+                        </div>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+                </div>
+                </article>
+                </lightning-card>
+    </template>
+</template>

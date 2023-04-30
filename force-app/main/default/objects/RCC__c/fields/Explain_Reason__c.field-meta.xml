@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Explain_Reason__c</fullName>
+    <description>In case, public audit service is not proposed, please explain the reason for selected - whether or not</description>
+    <externalId>false</externalId>
+    <inlineHelpText>In case, public audit service is not proposed, please explain the reason for selected - whether or not</inlineHelpText>
+    <label>Reason For Not Proposed Audit Service</label>
+    <length>131072</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

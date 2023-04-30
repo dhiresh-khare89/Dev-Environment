@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Default</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Remark__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong&gt;For &lt;/strong&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Markets Ecosystems&lt;/strong&gt;&lt;strong&gt; User:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1.Present the aggregated Quip document to Client Council and Capture the recommendations&lt;/p&gt;&lt;p&gt;2.Accept/Reject the New Client&lt;/p&gt;&lt;p&gt;3.Add recommendations in Linkreta&lt;/p&gt;&lt;p&gt;4.Check the assigned tasks&lt;/p&gt;</info>
+        <picklistValueName>Client Take On</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Remark__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong&gt;For &lt;/strong&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;Markets Ecosystems &lt;/strong&gt;&lt;strong&gt;User:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Add Client Council deck (Quip)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1. Click on &amp;#39;Documentation&amp;#39; tab&lt;/p&gt;&lt;p&gt;2. Click at drop down menu option on the right side of the section and select &amp;#39;Open Template Library&amp;#39;&lt;/p&gt;&lt;p&gt;3. Access &lt;span style=&quot;font-size: 14px;&quot;&gt;Markets Ecosystems&lt;/span&gt; folder&lt;/p&gt;&lt;p&gt;4. Select &amp;#39;Client Council Review Quip&amp;#39; Template&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Add Aggregated Client Council Deck&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1. Follow same steps as 1 to 3. Then use the &amp;quot;Quip Index&amp;quot; template to create the aggregated document&lt;/p&gt;</info>
+        <picklistValueName>Client Take-On PreWork</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Sector__c</fieldNames>
+        <fieldNames>Solution__c</fieldNames>
+        <fieldNames>Expertise__c</fieldNames>
+        <fieldNames>SubExpertise__c</fieldNames>
+        <fieldNames>Corridor__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong&gt;For Sector Business Partner&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1.Check assigned tasks&lt;/p&gt;&lt;p&gt;2.Click &lt;strong&gt;&amp;#39;Enrich data from External Database&amp;#39;&lt;/strong&gt; button (If required, update manually)&lt;/p&gt;&lt;p&gt;3.For more clarity email prospect. If prospect not responding then notify &lt;strong&gt;Outbound Team&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;4.Assign &lt;strong&gt;New Client Owner&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;For New Client Owner:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1. Schedule meeting with Prospect and Capture MOM&lt;/p&gt;&lt;p&gt;2. Click &lt;strong&gt;&amp;#39;Client Fitment &amp;amp; Evaluation&amp;#39;&lt;/strong&gt; button &amp;amp; add details&lt;/p&gt;&lt;p&gt;3. Add Solution &amp;amp; Expertise&lt;/p&gt;&lt;p&gt;4. Click &lt;strong&gt;&amp;#39;Submit for NSL approval&amp;#39;&lt;/strong&gt; button for NSL approval &amp;amp; Schedule discussion&lt;/p&gt;&lt;p&gt;&lt;strong&gt;For Sector Leader:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1.Review New client record &amp;amp; Approve/Reject with recommendations&lt;/p&gt;&lt;p&gt;2.Create &amp;amp; Assign Tasks&lt;/p&gt;</info>
+        <picklistValueName>Internal / External Discussions</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Sector__c</fieldNames>
+        <fieldNames>SectorCoordinator__c</fieldNames>
+        <fieldNames>NSL__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong&gt;For Outbound Team &amp;amp; New Client Owner:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1. Enrich Prospect details (Email, Phone, address)&lt;/p&gt;&lt;p&gt;2. For more clarity email prospect&lt;/p&gt;&lt;p&gt;3. Add Sector of client&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Remark__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong&gt;For New Client Owner:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Document your lost leads to increase future wins.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1. Identify and log lessons learned&lt;/p&gt;&lt;p&gt;2. Schedule follow-ups if needed&lt;/p&gt;</info>
+        <picklistValueName>NotAccept</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>
